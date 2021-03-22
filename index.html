@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Virtual-piano</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header">
+                <div class="header__text">Virtual Piano</div>
+                <button class="fullscreen__btn"><img class="img" src="./assets/fullscreen.svg" alt=""></button>
+            </div>
+        </header>
+        <div class="notes__letters_btn">
+            <button class="notes__btn">Notes</button>
+            <button class="letters__btn">Letters</button>
+        </div>
+        <div class="piano__keys">
+            <div class="white__key key" data-note="C" data-key="D"></div>
+            <div class="white__key key" data-note="D" data-key="F"></div>
+            <div class="white__key key" data-note="E" data-key="G"></div>
+            <div class="white__key key" data-note="F" data-key="H"></div>
+            <div class="white__key key" data-note="G" data-key="J"></div>
+            <div class="white__key key" data-note="A" data-key="K"></div>
+            <div class="white__key key" data-note="B" data-key="L"></div>
+            <div class="black__keys key">
+                <div class="black__key key" data-note="C#" data-key="R"></div>
+                <div class="black__key key" data-note="D#" data-key="T"></div>
+                <div class="black__key key"></div>
+                <div class="black__key key" data-note="F#" data-key="U"></div>
+                <div class="black__key key" data-note="G#" data-key="I"></div>
+                <div class="black__key key" data-note="A#" data-key="O"></div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-container">
+            <a class="github" href="#" target="_blank" rel="noopener noreferrer">OlegRabushko</a>
+            <a class="rss" href="https://rs.school/js/" target="_blank" rel="noopener noreferrer">
+              <span class="rss-year">'21</span>
+            </a>
+          </div>
+    </footer>
+    <audio src="./audio/c.mp3" id="C" data-key="D"></audio>
+    <audio src="./audio/c♯.mp3" id="C#" data-key="R"></audio>
+    <audio src="./audio/d.mp3" id="D" data-key="F"></audio>
+    <audio src="./audio/d♯.mp3" id="D#" data-key="T"></audio>
+    <audio src="./audio/e.mp3" id="E" data-key="G"></audio>
+    <audio src="./audio/f.mp3" id="F" data-key="H"></audio>
+    <audio src="./audio/f♯.mp3" id="F#" data-key="U"></audio>
+    <audio src="./audio/g.mp3" id="G" data-key="J"></audio>
+    <audio src="./audio/gs.mp3" id="G#" data-key="I"></audio>
+    <audio src="./audio/a.mp3" id="A" data-key="K"></audio>
+    <audio src="./audio/a♯.mp3" id="A#" data-key="O"></audio>
+    <audio src="./audio/b.mp3" id="B" data-key="L"></audio>
+    <script  src="./index.js"></script>
+</body>
+</html>
