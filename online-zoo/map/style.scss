@@ -1,0 +1,393 @@
+$blue-white: #c5e1e5;
+$bg: #2a8086;
+$black: #0d444d;
+@mixin Roboto400 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+@mixin Roboto500 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+@mixin RobotoMono400 {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 400;
+}
+@mixin RobotoMono500 {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 500;
+}
+@mixin Rubik400 {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+}
+@mixin Rubik300 {
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+}
+@mixin Rubik500 {
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+}
+@mixin blocksSize {
+  max-width: 1510px;
+  padding: 0 15px;
+  width: 100%;
+  margin: auto;
+}
+@mixin forBtns {
+  outline: none;
+  cursor: pointer;
+  border: none;
+}
+@mixin pointText {
+  position: absolute;
+  text-align: center;
+  width: 20px;
+  border-radius: 10px;
+  background-color: transparent;
+  padding: 10px;
+  left: 0;
+  font-size: 1px;
+  color: transparent;
+}
+@mixin pointTextHover {
+  width: 250px;
+  font-size: 16px;
+  top: -100px;
+  background-color: #fff;
+  color: $black;
+  box-shadow: 0px 2px 10px 5px $bg;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+    border-radius: 52% 52% 67% 40% / 45% 47% 60% 62%;
+  }
+  30% {
+    width: 90px;
+    height: 87px;
+  }
+  50% {
+    transform: rotate(180deg);
+    border-radius: 51% 49% 49% 51% / 49% 53% 47% 51%;
+    width: 90px;
+    height: 87px;
+  }
+  70% {
+    width: 90px;
+    height: 87px;
+  }
+  100% {
+    transform: rotate(360deg);
+    border-radius: 52% 52% 67% 40% / 45% 47% 60% 62%;
+  }
+}
+.full__container {
+  background-color: $bg;
+}
+.header__container {
+  background-color: $bg;
+  border-bottom: 5px solid #1e697063;
+  .header__block {
+    @include blocksSize;
+    display: flex;
+    height: 110px;
+    a {
+      margin-top: 10px;
+    }
+    .logo__header {
+      width: 105px;
+      margin-right: 50px;
+      cursor: pointer;
+    }
+    ul {
+      max-width: 515px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding: 0;
+      margin: auto 0;
+      li {
+        list-style: none;
+        &:nth-child(2) {
+          border-bottom: 2px solid $blue-white;
+        }
+        a {
+          @include RobotoMono500;
+          font-size: 18px;
+          line-height: 24px;
+          text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          color: $blue-white;
+          text-decoration: none;
+          &:hover {
+            border-bottom: 2px solid $blue-white;
+          }
+        }
+      }
+    }
+    .log__container {
+      display: flex;
+      justify-content: space-between;
+      margin: auto auto;
+      max-width: 550px;
+      margin-right: -130px;
+      width: 100%;
+      .search__block {
+        display: flex;
+        width: 270px;
+        height: 40px;
+        background-color: transparent;
+        border-radius: 20px;
+        transition: 1s;
+        margin: auto;
+        margin-right: 60px;
+        &:hover {
+          transition: 0.5s;
+          background-color: #f3f7f9;
+        }
+        .search__input {
+          width: 240px;
+          height: 40px;
+          border: none;
+          outline: none;
+          border-radius: 20px;
+          background-color: transparent;
+          padding: 0 15px;
+          margin: auto 0;
+          &:focus {
+            background-color: #f3f7f9;
+          }
+        }
+        .search__ico {
+          margin-left: 10px;
+          margin-right: -50px;
+          width: 30px;
+          cursor: pointer;
+          &:hover {
+            transform: scale(1.3);
+          }
+        }
+      }
+      button {
+        @include forBtns;
+        @include Roboto400;
+        color: $blue-white;
+        width: 100px;
+        height: 50px;
+        background-color: transparent;
+        font-size: 18px;
+        line-height: 24px;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        &:hover {
+          padding-top: 5px;
+          border: 1px solid $blue-white;
+          border-radius: 40px;
+        }
+      }
+    }
+    h1 {
+      display: none;
+    }
+  }
+}
+.map {
+  .map__top-text {
+    @include Rubik400;
+    @include blocksSize;
+    font-size: 24px;
+    line-height: 28px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    color: $blue-white;
+    text-transform: uppercase;
+  }
+  .map__container {
+    @include blocksSize;
+    position: relative;
+    height: 1000px;
+    background: url(../assets/fonts/map.svg) no-repeat bottom;
+    background-size: 100% 100%;
+    .map__animal-point {
+      display: inline-block;
+      position: relative;
+      &:nth-child(1) {
+        position: relative;
+        top: 500px;
+        left: 19%;
+        &::after {
+          @include pointText;
+          @include Roboto400;
+          content: "USA, St. Augustine's Alligators Farm Zoological Park";
+        }
+        &:hover:after {
+          @include pointTextHover;
+        }
+      }
+      &:nth-child(2) {
+        top: 470px;
+        left: 68%;
+        &::after {
+          @include pointText;
+          @include Roboto400;
+          content: "China, Shenshuping Gengda Panda Center";
+        }
+        &:hover:after {
+          @include pointTextHover;
+        }
+      }
+      &:nth-child(3) {
+        top: 750px;
+        left: 47%;
+        &::after {
+          @include pointText;
+          @include Roboto400;
+          content: "Madagascar";
+        }
+        &:hover:after {
+          @include pointTextHover;
+          top: -60px;
+        }
+      }
+      &:nth-child(4) {
+        top: 690px;
+        left: 35%;
+        &::after {
+          @include pointText;
+          @include Roboto400;
+          content: "South Africa, Tembe Elephant Park";
+        }
+        &:hover:after {
+          @include pointTextHover;
+          top: 100px;
+        }
+      }
+      &:nth-child(5) {
+        top: 600px;
+        left: 28%;
+        &::after {
+          @include pointText;
+          @include Roboto400;
+          content: "Center Africa, GRACE gorillas";
+        }
+        &:hover:after {
+          @include pointTextHover;
+          top: -60px;
+        }
+      }
+      &:nth-child(6) {
+        top: 400px;
+        left: -16%;
+        &::after {
+          @include pointText;
+          @include Roboto400;
+          content: "Canada, Catalina Island";
+        }
+        &:hover:after {
+          @include pointTextHover;
+          top: -60px;
+        }
+      }
+      &::before {
+        position: absolute;
+        left: 0;
+        content: "";
+        width: 90px;
+        height: 83px;
+        background-color: $blue-white;
+        border-radius: 52% 52% 67% 40% / 45% 47% 60% 62%;
+        border-radius: 52% 52% 67% 40% / 45% 47% 60% 62%;
+        animation: spin 5s infinite linear;
+      }
+      .map__animal-img {
+        position: relative;
+        width: 72px;
+        height: 70px;
+        top: 5px;
+        left: 10px;
+        transition: 1s;
+        &:hover {
+          transition: 0.3s;
+          border-radius: 52% 52% 67% 40% / 45% 47% 60% 62%;
+          box-shadow: 0px 4px 20px 10px #c5e1e5;
+        }
+      }
+    }
+    .map__btns {
+      position: absolute;
+      display: flex;
+      justify-content: space-between;
+      bottom: 25px;
+      right: -100px;
+      width: 80px;
+      .map__btn {
+        width: 32px;
+        height: 32px;
+        border-radius: 16px;
+        border: 1.5px solid #ffffff;
+        background: rgba(255, 255, 255, 0.4);
+        cursor: pointer;
+        transition: 0.1s;
+        &:hover {
+          transform: scale(1.3);
+        }
+        .btn__plus {
+          margin-top: 3px;
+          margin-left: 3px;
+        }
+        .btn__minus {
+          margin-top: 5px;
+          margin-left: 4px;
+        }
+      }
+    }
+  }
+}
+.footer__container {
+  background-color: #196469;
+  border-bottom: 5px solid #1e697063;
+  .footer__block {
+    @include blocksSize;
+    display: flex;
+    justify-content: space-between;
+    height: 200px;
+    a {
+      margin-top: 55px;
+    }
+    .footer__logo {
+      width: 105px;
+      margin-right: 50px;
+      cursor: pointer;
+    }
+    ul {
+      max-width: 515px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding: 0;
+      margin: auto 0 auto -45%;
+      li {
+        list-style: none;
+        &:nth-child(2) {
+          border-bottom: 2px solid $blue-white;
+        }
+        a {
+          @include RobotoMono500;
+          font-size: 18px;
+          line-height: 24px;
+          text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          color: $blue-white;
+          text-decoration: none;
+          &:hover {
+            border-bottom: 2px solid $blue-white;
+          }
+        }
+      }
+    }
+    .auther__info {
+      width: 200px;
+      margin: 6% -10% 0 0;
+      color: $blue-white;
+    }
+  }
+}
