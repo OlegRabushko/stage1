@@ -1,0 +1,1027 @@
+$blue-white: #c5e1e5;
+$bg: #2a8086;
+$black: #0d444d;
+@mixin Roboto400 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+@mixin Roboto500 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+@mixin RobotoMono400 {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 400;
+}
+@mixin RobotoMono500 {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 500;
+}
+@mixin Rubik400 {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+}
+@mixin Rubik300 {
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+}
+@mixin Rubik500 {
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+}
+@mixin blocksSize {
+  max-width: 1510px;
+  padding: 0 15px;
+  width: 100%;
+  margin: auto;
+}
+@mixin forBtns {
+  outline: none;
+  cursor: pointer;
+  border: none;
+}
+@mixin accBtns {
+  height: 45px;
+  width: 225px;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+  background-color: transparent;
+  border-bottom: 3px solid $bg;
+  margin-bottom: 30px;
+}
+@mixin FacebookBtn {
+  @include forBtns;
+  @include Roboto400;
+  position: relative;
+  width: 215px;
+  height: 55px;
+  background-color: #fff;
+  box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.06);
+  border-radius: 10px;
+  font-size: 16px;
+  line-height: 19px;
+  color: #2d2d2d;
+  padding-left: 30px;
+  &::after {
+    position: absolute;
+    content: url(./assets/icons/Facebook.svg);
+    left: 20px;
+    top: 15px;
+  }
+  &:hover {
+    box-shadow: 0px 3px 20px rgba(38, 101, 112, 0.5);
+  }
+}
+@mixin flexImgs {
+  text-align: center;
+  width: 480px;
+  height: 360px;
+  background-color: #fff;
+  box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.06);
+  border-radius: 10px;
+  margin-bottom: 20px;
+  transition: 0.5s;
+  &:hover {
+    box-shadow: 10px 12px 30px rgba(87, 162, 168, 0.4);
+    transform: translate(0px, -15px);
+    transition: 0.5s;
+  }
+}
+@keyframes spin {
+  0% {
+    border-radius: 70% 30% 30% 70% / 70% 70% 30% 30%;
+  }
+
+  50% {
+    border-radius: 40% 60% 60% 40% / 40% 40% 60% 60%;
+  }
+  100% {
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  }
+}
+h1 {
+  display: none;
+}
+
+.full__container {
+  background-color: #f3f7f9;
+}
+.header__container {
+  background-color: $bg;
+  border-bottom: 5px solid #1e697063;
+  .header__block {
+    @include blocksSize;
+    display: flex;
+    height: 110px;
+    a {
+      margin-top: 10px;
+    }
+    .logo__header {
+      width: 105px;
+      margin-right: 50px;
+      cursor: pointer;
+    }
+    ul {
+      max-width: 515px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding: 0;
+      margin: auto 0;
+      li {
+        list-style: none;
+        &:first-child {
+          border-bottom: 2px solid $blue-white;
+        }
+        a {
+          @include RobotoMono500;
+          font-size: 18px;
+          line-height: 24px;
+          text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          color: $blue-white;
+          text-decoration: none;
+          &:hover {
+            border-bottom: 2px solid $blue-white;
+          }
+        }
+      }
+    }
+    .log__container {
+      display: flex;
+      justify-content: space-between;
+      margin: auto auto;
+      max-width: 550px;
+      margin-right: -130px;
+      width: 100%;
+      .search__block {
+        display: flex;
+        width: 270px;
+        height: 40px;
+        background-color: transparent;
+        border-radius: 20px;
+        transition: 1s;
+        margin: auto;
+        margin-right: 60px;
+        &:hover {
+          transition: 0.5s;
+          background-color: #f3f7f9;
+        }
+        .search__input {
+          width: 240px;
+          height: 40px;
+          border: none;
+          outline: none;
+          border-radius: 20px;
+          background-color: transparent;
+          padding: 0 15px;
+          margin: auto 0;
+          &:focus {
+            background-color: #f3f7f9;
+          }
+        }
+        .search__ico {
+          margin-left: 10px;
+          margin-right: -50px;
+          width: 30px;
+          cursor: pointer;
+          &:hover {
+            transform: scale(1.3);
+          }
+        }
+      }
+      button {
+        @include forBtns;
+        @include Roboto400;
+        color: $blue-white;
+        width: 100px;
+        height: 50px;
+        background-color: transparent;
+        font-size: 18px;
+        line-height: 24px;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        &:hover {
+          padding-top: 5px;
+          border: 1px solid $blue-white;
+          border-radius: 40px;
+        }
+      }
+    }
+  }
+}
+
+.watch__your__animal__container {
+  background: url(./assets/fonts/watch-your-animal-fon.svg);
+  background-repeat: repeat-x;
+  background-position: bottom;
+  background-size: auto auto;
+  .watch__your__animal__block {
+    @include blocksSize;
+    padding-top: 25px;
+    height: 770px;
+    display: flex;
+    justify-content: space-between;
+    .info__block {
+      max-width: 670px;
+      width: 100%;
+      color: #f3f3f3;
+      .top__text_1 {
+        @include Rubik300;
+        margin-top: 40px;
+        font-size: 74px;
+        line-height: 85px;
+      }
+      .top__text_2 {
+        @include Rubik500;
+        font-size: 64px;
+        line-height: 76px;
+        margin-bottom: 30px;
+      }
+      .info__text {
+        @include Roboto400;
+        max-width: 480px;
+        width: 100%;
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 90px;
+      }
+      .btn__watch {
+        @include RobotoMono400;
+        @include forBtns;
+        width: 260px;
+        height: 52px;
+        font-size: 18px;
+        line-height: 24px;
+        color: $black;
+        border-radius: 26px;
+        background-color: #f3f7f8;
+        &:hover {
+          background-color: $blue-white;
+        }
+      }
+    }
+    .main__panda {
+      position: relative;
+      max-width: 800px;
+      width: 100%;
+      max-height: 660px;
+      height: 100%;
+      margin-top: 0;
+      margin-right: 0;
+      border-radius: 63% 37% 38% 62% / 63% 57% 43% 37%;
+      border: 1px solid #000000;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      background-image: url(./assets/images/main-panda.png);
+      &:hover {
+        animation: spin 3s linear infinite;
+        animation-direction: alternate;
+        transform-origin: 55% 55%;
+      }
+      .fon__for__panda {
+        background-color: rgba(172, 200, 202, 0.25);
+        max-width: 800px;
+        width: 100%;
+        max-height: 660px;
+        height: 100%;
+        margin-top: 0;
+        margin-right: 0;
+        border: 1px solid transparent;
+        box-shadow: 0px 4px 4px transparent;
+        border-radius: 63% 37% 38% 62% / 63% 57% 43% 37%;
+        transition: 1s;
+        &:hover {
+          background-color: transparent;
+          animation: spin 3s linear infinite;
+          animation-direction: alternate;
+          transform-origin: 55% 55%;
+        }
+        .playBtn_ico {
+          width: 100px;
+          margin: 35% 50%;
+          transition: 0.3s;
+          &:hover {
+            transform: scale(1.2);
+          }
+        }
+      }
+    }
+  }
+}
+.how__it__works__container {
+  height: 870px;
+  background: url(./assets/fonts/how-it-works-fon.svg);
+  background-repeat: repeat-x;
+  background-size: auto auto;
+  background-position: bottom;
+
+  .how__it__works__block {
+    @include blocksSize;
+    .how__it__works__text {
+      @include Rubik400;
+      font-size: 24px;
+      line-height: 28px;
+      margin-top: -50px;
+      margin-bottom: 70px;
+    }
+    .info__circles {
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+      .cirle__1 {
+        position: relative;
+        width: 480px;
+        &::after {
+          position: absolute;
+          transform: translateX(-50%);
+          top: 25%;
+          content: url(./assets/icons/binoculars-ico.svg);
+        }
+      }
+      .cirle__2 {
+        position: relative;
+        width: 480px;
+        &::after {
+          position: absolute;
+          transform: translateX(-50%);
+          top: 25%;
+          content: url(./assets/icons/heart-paw-ico.svg);
+        }
+      }
+      .cirle__3 {
+        position: relative;
+        width: 480px;
+        &::after {
+          position: absolute;
+          transform: translateX(-50%);
+          top: 25%;
+          content: url(./assets/icons/hand-heart-ico.svg);
+        }
+      }
+      .empty__circle {
+        margin: auto;
+        background-color: #fff;
+        height: 145px;
+        width: 145px;
+        border-radius: 50%;
+        margin-bottom: 15px;
+        box-shadow: 0px 2px 50px rgba(0, 0, 0, 0.06);
+      }
+      .circle__text {
+        @include Roboto400;
+        font-size: 14px;
+        line-height: 20px;
+        color: $black;
+      }
+    }
+  }
+  .pictures {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    .bamboo__1 {
+      content: url(./assets/icons/Bamboo.svg);
+      margin-top: 135px;
+      margin-left: 10px;
+    }
+    .tree__1 {
+      content: url(./assets/icons/tree.svg);
+      margin-left: -9%;
+      margin-right: 17%;
+    }
+    .tree__2 {
+      content: url(./assets/icons/tree.svg);
+      height: 160px;
+      margin-top: 160px;
+    }
+    .panda__1 {
+      position: relative;
+      margin-top: 235px;
+      margin-left: -7%;
+      &::after {
+        top: -25%;
+        left: 110px;
+        position: absolute;
+        content: url(./assets/icons/Bamboo.svg);
+      }
+    }
+    .tree__3 {
+      content: url(./assets/icons/tree.svg);
+      margin-top: 220px;
+      margin-left: 15%;
+    }
+  }
+}
+.pets__in__zoo__container {
+  margin-top: 60px;
+  .pets__in__zoo__block {
+    @include blocksSize;
+    position: relative;
+    &::after {
+      position: absolute;
+      content: url(./assets/icons/Penguin.svg);
+      bottom: 20px;
+      right: -90px;
+    }
+    .left__arrow {
+      position: absolute;
+      content: url(./assets/icons/left-arrow-ico.svg);
+      right: -100px;
+      top: 50%;
+      cursor: pointer;
+      &:hover {
+        transform: scale(1.3);
+      }
+    }
+    .right__arrow {
+      position: absolute;
+      content: url(./assets/icons/right-arrow-ico.svg);
+      right: -100px;
+      top: 55%;
+      cursor: pointer;
+      &:hover {
+        transform: scale(1.3);
+      }
+    }
+    .name__span {
+      @include Rubik400;
+      font-size: 24px;
+      line-height: 28px;
+      color: $black;
+      margin-right: 67%;
+    }
+    .btn__choose__favorite {
+      @include forBtns;
+      @include RobotoMono400;
+      position: relative;
+      margin-bottom: 65px;
+      width: 330px;
+      height: 50px;
+      border-radius: 25px;
+      border: 1.5px solid $bg;
+      background-color: transparent;
+      padding-left: 40px;
+      font-size: 18px;
+      line-height: 24px;
+      letter-spacing: 0.1em;
+      color: $black;
+      &::after {
+        position: absolute;
+        content: url(./assets/icons/heart-ico.svg);
+        left: 0;
+        padding-left: 20px;
+      }
+      &:hover {
+        background-color: $blue-white;
+      }
+    }
+    .pets__block {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      cursor: pointer;
+      .pet__panda {
+        @include flexImgs;
+      }
+      .pet__eagle {
+        @include flexImgs;
+      }
+      .pet__gorilla {
+        @include flexImgs;
+      }
+      .pet__alligator {
+        @include flexImgs;
+      }
+      .pet__elephant {
+        @include flexImgs;
+      }
+      .pet__lemur {
+        @include flexImgs;
+      }
+      .flex__imgs {
+        position: relative;
+        padding-top: 20px;
+        margin-bottom: 30px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        .img__rotation {
+          position: relative;
+          overflow: hidden;
+          width: 228px;
+          height: 221px;
+          border-radius: 120% 120% 170% 100% / 120% 120% 150% 150%;
+          transition: transform 0.5s;
+          &:hover {
+            transform: rotate(360deg);
+          }
+          .panda__img {
+            &::before {
+              background: url(./assets/images/panda.png);
+            }
+          }
+          .eagle__img {
+            &::before {
+              background: url(./assets/images/eagles.png);
+            }
+          }
+          .gorilla__img {
+            &::before {
+              background: url(./assets/images/gorillas.png);
+            }
+          }
+          .alligator__img {
+            &::before {
+              background: url(./assets/images/alligators.png);
+            }
+          }
+          .elephant__img {
+            &::before {
+              background: url(./assets/images/elephants.png);
+            }
+          }
+          .lemur__img {
+            &::before {
+              background: url(./assets/images/lemurs.png);
+            }
+          }
+          .img__return {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            &::before {
+              content: "";
+              position: absolute;
+              top: 0;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              transition: transform 0.5s;
+            }
+            &:hover:before {
+              transform: rotate(-360deg);
+            }
+          }
+        }
+      }
+      .pet__info {
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px solid #e5eaeb;
+        padding-top: 30px;
+        padding-left: 30px;
+      }
+      .top__text {
+        @include Roboto500;
+        font-size: 24px;
+        line-height: 28px;
+        color: #2d2d2d;
+        text-align: left;
+        margin-bottom: 5px;
+      }
+      .location__text {
+        @include Roboto400;
+        color: #919191;
+        font-size: 16px;
+        line-height: 19px;
+      }
+      .tv__ico {
+        margin-right: 30px;
+      }
+    }
+  }
+}
+
+.pay__and__feed__container {
+  margin-top: 180px;
+  margin-bottom: 30px;
+  padding-top: 100px;
+  height: 575px;
+  background: url(./assets/fonts/pay-and-feed-fon.svg);
+  background-repeat: repeat-x;
+  background-size: auto auto;
+  background-position: bottom;
+  color: $blue-white;
+  .pay__and__feed__block {
+    @include blocksSize;
+    .pay__top__text {
+      @include Rubik400;
+      font-size: 24px;
+      line-height: 28px;
+      margin-left: 75px;
+      margin-right: 59%;
+    }
+    .btn__donate {
+      @include forBtns;
+      @include RobotoMono400;
+      margin-bottom: 65px;
+      width: 355px;
+      height: 50px;
+      border-radius: 25px;
+      box-shadow: (0px 2px 20px rgba(185, 213, 217, 0.6));
+      background-color: $blue-white;
+      font-size: 18px;
+      line-height: 24px;
+      letter-spacing: 0.1em;
+      color: $black;
+      &:hover {
+        background-color: #aad8df;
+      }
+    }
+    .pay__circles__container {
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+      .pay__circle__block {
+        position: relative;
+        width: 480px;
+        &::after {
+          position: absolute;
+          transform: translateX(-50%);
+          top: 25%;
+        }
+        &:first-child:after {
+          content: url(./assets/icons/donate-ico.svg);
+        }
+        &:nth-child(2):after {
+          content: url(./assets/icons/trust-ico.svg);
+        }
+        &:nth-child(3):after {
+          content: url(./assets/icons/monkey-ico.svg);
+        }
+      }
+      .pay__circle {
+        margin: auto;
+        background-color: #fff;
+        height: 145px;
+        width: 145px;
+        border-radius: 50%;
+        margin-bottom: 15px;
+        box-shadow: 0px 2px 50px rgba(185, 213, 217, 0.6);
+      }
+      .line {
+        position: absolute;
+        border-top: 1px solid $blue-white;
+        width: 45%;
+        margin-top: -150px;
+        margin-left: 320px;
+        &::after {
+          position: absolute;
+          content: url(./assets/icons/right-arrow-2-ico.svg);
+          margin-left: 52%;
+          margin-top: -12px;
+        }
+      }
+    }
+  }
+}
+.testimonials__container {
+  .testimonials__block {
+    @include blocksSize;
+
+    .testimonials__top__text {
+      @include Rubik400;
+      font-size: 24px;
+      line-height: 28px;
+      margin-right: 73%;
+      color: $black;
+    }
+    .btn__feedback {
+      @include forBtns;
+      @include RobotoMono400;
+      position: relative;
+      margin-bottom: 50px;
+      width: 225px;
+      height: 50px;
+      border-radius: 25px;
+      border: 1.5px solid $bg;
+      background-color: transparent;
+      padding-left: 35px;
+      font-size: 18px;
+      line-height: 24px;
+      color: $black;
+      &::after {
+        position: absolute;
+        content: url(./assets/icons/message-ico.svg);
+        left: 0;
+        padding-left: 15px;
+      }
+      &:hover {
+        background-color: $blue-white;
+      }
+    }
+    .comments__block {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 100px;
+      .comment__block {
+        width: 480px;
+        .info__comment {
+          position: relative;
+          height: 175px;
+          background-color: #fff;
+          box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.06);
+          border-radius: 10px;
+          &::after {
+            position: absolute;
+            content: "";
+            width: 50px;
+            height: 50px;
+            border: 20px solid;
+            border-color: #fff transparent transparent #fff;
+            border-radius: 5px;
+            transform: rotate(-125deg) skewX(20deg);
+            bottom: -5px;
+            left: 45px;
+          }
+          .date__comment {
+            @include Roboto400;
+            font-size: 14px;
+            line-height: 16px;
+            color: #b3b3b3;
+            margin: 0 0 20px 45px;
+            padding-top: 30px;
+          }
+          .text__comment {
+            @include Roboto400;
+            font-size: 16px;
+            line-height: 19px;
+            font-style: italic;
+            color: #2d2d2d;
+            margin: 0 45px;
+          }
+        }
+        img {
+          margin-top: 25px;
+        }
+        .info__person {
+          position: absolute;
+          @include Roboto400;
+          font-style: italic;
+          font-size: 16px;
+          line-height: 19px;
+          margin: 50px 0 0 10px;
+        }
+      }
+    }
+  }
+}
+.look__animals__container {
+  @include blocksSize;
+  margin-bottom: 115px;
+  .look__animals__block {
+    .look__animals__top__text {
+      @include Rubik400;
+      font-size: 24px;
+      line-height: 28px;
+      color: $black;
+      margin-bottom: 65px;
+    }
+    .look__animals__slider {
+      display: flex;
+      justify-content: space-between;
+    }
+    .look__animals__img-rotation {
+      position: relative;
+      overflow: hidden;
+      width: 76px;
+      height: 73px;
+      border-radius: 120% 120% 170% 100% / 120% 120% 150% 150%;
+      transition: transform 0.5s;
+      &:hover {
+        transform: rotate(360deg);
+      }
+      .panda__img {
+        &::before {
+          background: url(./assets/images/Panda.png);
+          background-size: 100%;
+        }
+      }
+      .eagle__img {
+        &::before {
+          background: url(./assets/images/eagles.png);
+          background-size: 100%;
+        }
+      }
+      .gorilla__img {
+        &::before {
+          background: url(./assets/images/gorillas.png);
+          background-size: 100%;
+        }
+      }
+      .alligator__img {
+        &::before {
+          background: url(./assets/images/alligators.png);
+          background-size: 100%;
+        }
+      }
+      .elephant__img {
+        &::before {
+          background: url(./assets/images/elephants.png);
+          background-size: 100%;
+        }
+      }
+      .lemur__img {
+        &::before {
+          background: url(./assets/images/lemurs.png);
+          background-size: 100%;
+        }
+      }
+      .look__animals__img {
+        position: absolute;
+        width: 76px;
+        height: 73px;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          transition: transform 0.5s;
+        }
+        &:hover:before {
+          transform: rotate(-360deg);
+        }
+      }
+    }
+    .animal__name {
+      @include RobotoMono500;
+      font-size: 14px;
+      line-height: 18px;
+      text-align: center;
+      color: #2d2d2d;
+      margin-top: 8px;
+    }
+    .left__arrow {
+      content: url(./assets/icons/left-arrow-ico.svg);
+      cursor: pointer;
+      &:hover {
+        transform: scale(1.3);
+      }
+    }
+    .right__arrow {
+      content: url(./assets/icons/right-arrow-ico.svg);
+      cursor: pointer;
+      &:hover {
+        transform: scale(1.3);
+      }
+    }
+  }
+}
+.footer__container {
+  background-color: #196469;
+  border-bottom: 5px solid #1e697063;
+  .footer__block {
+    @include blocksSize;
+    display: flex;
+    justify-content: space-between;
+    height: 200px;
+    a {
+      margin-top: 55px;
+    }
+    .footer__logo {
+      width: 105px;
+      margin-right: 50px;
+      cursor: pointer;
+    }
+    ul {
+      max-width: 515px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding: 0;
+      margin: auto 0 auto -45%;
+      li {
+        list-style: none;
+        &:first-child {
+          border-bottom: 2px solid $blue-white;
+        }
+        a {
+          @include RobotoMono500;
+          font-size: 18px;
+          line-height: 24px;
+          text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          color: $blue-white;
+          text-decoration: none;
+          &:hover {
+            border-bottom: 2px solid $blue-white;
+          }
+        }
+      }
+    }
+    .auther__info {
+      width: 200px;
+      margin: 6% -10% 0 0;
+      color: $blue-white;
+    }
+  }
+}
+
+.login-logout {
+  position: fixed;
+  display: none;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(32, 32, 32, 0.6);
+  .login-logout__container {
+    text-align: center;
+    margin-top: 200px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: 570px;
+    background: #fff;
+    border-radius: 23px;
+    .login-logout__header {
+      height: 125px;
+      background: $bg;
+      border-radius: 20px 20px 0px 0px;
+      text-align: center;
+      margin-bottom: 30px;
+      img {
+        margin-top: 40px;
+        width: 70px;
+      }
+    }
+    .create-acc {
+      @include forBtns;
+      @include Roboto400;
+      @include accBtns;
+    }
+    .login-acc {
+      @include forBtns;
+      @include Roboto400;
+      @include accBtns;
+      border-bottom: 3px solid $blue-white;
+      margin-bottom: 30px;
+    }
+    .google__sign-in {
+      @include FacebookBtn;
+      margin-right: 10px;
+      &::after {
+        content: url(./assets/icons/Google.svg);
+      }
+    }
+    .facebook__sign-in {
+      @include FacebookBtn;
+      margin-bottom: 10px;
+    }
+    .input__top-text {
+      @include Roboto400;
+      text-align: left;
+      margin-left: 70px;
+      font-size: 14px;
+      line-height: 16px;
+      color: $black;
+      margin-top: 20px;
+      text-transform: uppercase;
+    }
+    .login-logout__inputs {
+      outline: none;
+      border: none;
+      width: 450px;
+      height: 55px;
+      background: #ffffff;
+      box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.06);
+      border-radius: 10px;
+    }
+    .checkbox__text {
+      @include Roboto400;
+      font-size: 16px;
+      margin-top: 30px;
+      line-height: 19px;
+      color: #2d2d2d;
+      a {
+        color: #2d2d2d;
+        border-bottom: 1px solid #a7a7a7;
+      }
+    }
+    .login-logout__btn {
+      @include forBtns;
+      @include RobotoMono400;
+      background-color: $bg;
+      width: 450px;
+      margin-top: 30px;
+      height: 54px;
+      border-radius: 27px;
+      font-size: 18px;
+      line-height: 24px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: $blue-white;
+      margin-bottom: 50px;
+      &:hover {
+        background-color: rgb(45, 159, 163);
+        color: #fff;
+      }
+    }
+  }
+}
