@@ -149,7 +149,7 @@
 
 .donate {
   height: 400px;
-  background: url(../../assets/fonts/how-it-works-fon.svg) repeat-x top;
+  background: url(../assets/fonts/how-it-works-fon.svg) repeat-x top;
   background-size: 100%cover;
 }
 
@@ -183,7 +183,7 @@
 }
 
 .donate .donate__container .pictures .tree__1 {
-  content: url(../../assets/icons/tree.svg);
+  content: url(../assets/icons/tree.svg);
   margin-left: 11%;
 }
 
@@ -197,13 +197,13 @@
   top: -75px;
   left: 110px;
   position: absolute;
-  content: url(../../assets/icons/Bamboo.svg);
+  content: url(../assets/icons/Bamboo.svg);
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
 
 .donate .donate__container .pictures .tree__2 {
-  content: url(../../assets/icons/tree.svg);
+  content: url(../assets/icons/tree.svg);
   margin-right: -20%;
   margin-bottom: -250px;
 }

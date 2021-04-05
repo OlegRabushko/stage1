@@ -65,7 +65,7 @@ $black: #0d444d;
   padding-left: 30px;
   &::after {
     position: absolute;
-    content: url(../assets/icons/Facebook.svg);
+    content: url(./assets/icons/Facebook.svg);
     left: 20px;
     top: 15px;
   }
@@ -211,7 +211,7 @@ h1 {
 }
 
 .watch__your__animal__container {
-  background: url(../assets/fonts/watch-your-animal-fon.svg);
+  background: url(./assets/fonts/watch-your-animal-fon.svg);
   background-repeat: repeat-x;
   background-position: bottom;
   background-size: auto auto;
@@ -271,7 +271,7 @@ h1 {
       border-radius: 63% 37% 38% 62% / 63% 57% 43% 37%;
       border: 1px solid #000000;
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-      background-image: url(../assets/images/main-panda.png);
+      background-image: url(./assets/images/main-panda.png);
       &:hover {
         animation: spin 3s linear infinite;
         animation-direction: alternate;
@@ -309,7 +309,7 @@ h1 {
 }
 .how__it__works__container {
   height: 870px;
-  background: url(../assets/fonts/how-it-works-fon.svg);
+  background: url(./assets/fonts/how-it-works-fon.svg);
   background-repeat: repeat-x;
   background-size: auto auto;
   background-position: bottom;
@@ -334,7 +334,7 @@ h1 {
           position: absolute;
           transform: translateX(-50%);
           top: 25%;
-          content: url(../assets/icons/binoculars-ico.svg);
+          content: url(./assets/icons/binoculars-ico.svg);
         }
       }
       .cirle__2 {
@@ -344,7 +344,7 @@ h1 {
           position: absolute;
           transform: translateX(-50%);
           top: 25%;
-          content: url(../assets/icons/heart-paw-ico.svg);
+          content: url(./assets/icons/heart-paw-ico.svg);
         }
       }
       .cirle__3 {
@@ -354,7 +354,7 @@ h1 {
           position: absolute;
           transform: translateX(-50%);
           top: 25%;
-          content: url(../assets/icons/hand-heart-ico.svg);
+          content: url(./assets/icons/hand-heart-ico.svg);
         }
       }
       .empty__circle {
@@ -379,17 +379,17 @@ h1 {
     justify-content: space-between;
     width: 90%;
     .bamboo__1 {
-      content: url(../assets/icons/Bamboo.svg);
+      content: url(./assets/icons/Bamboo.svg);
       margin-top: 135px;
       margin-left: 10px;
     }
     .tree__1 {
-      content: url(../assets/icons/tree.svg);
+      content: url(./assets/icons/tree.svg);
       margin-left: -9%;
       margin-right: 17%;
     }
     .tree__2 {
-      content: url(../assets/icons/tree.svg);
+      content: url(./assets/icons/tree.svg);
       height: 160px;
       margin-top: 160px;
     }
@@ -401,11 +401,11 @@ h1 {
         top: -25%;
         left: 110px;
         position: absolute;
-        content: url(../assets/icons/Bamboo.svg);
+        content: url(./assets/icons/Bamboo.svg);
       }
     }
     .tree__3 {
-      content: url(../assets/icons/tree.svg);
+      content: url(./assets/icons/tree.svg);
       margin-top: 220px;
       margin-left: 15%;
     }
@@ -418,13 +418,13 @@ h1 {
     position: relative;
     &::after {
       position: absolute;
-      content: url(../assets/icons/Penguin.svg);
+      content: url(./assets/icons/Penguin.svg);
       bottom: 20px;
       right: -90px;
     }
     .left__arrow {
       position: absolute;
-      content: url(../assets/icons/left-arrow-ico.svg);
+      content: url(./assets/icons/left-arrow-ico.svg);
       right: -100px;
       top: 50%;
       cursor: pointer;
@@ -434,7 +434,7 @@ h1 {
     }
     .right__arrow {
       position: absolute;
-      content: url(../assets/icons/right-arrow-ico.svg);
+      content: url(./assets/icons/right-arrow-ico.svg);
       right: -100px;
       top: 55%;
       cursor: pointer;
@@ -466,7 +466,7 @@ h1 {
       color: $black;
       &::after {
         position: absolute;
-        content: url(../assets/icons/heart-ico.svg);
+        content: url(./assets/icons/heart-ico.svg);
         left: 0;
         padding-left: 20px;
       }
@@ -515,32 +515,32 @@ h1 {
           }
           .panda__img {
             &::before {
-              background: url(../assets/images/Panda.png);
+              background: url(./assets/images/panda.png);
             }
           }
           .eagle__img {
             &::before {
-              background: url(../assets/images/eagles.png);
+              background: url(./assets/images/eagles.png);
             }
           }
           .gorilla__img {
             &::before {
-              background: url(../assets/images/gorillas.png);
+              background: url(./assets/images/gorillas.png);
             }
           }
           .alligator__img {
             &::before {
-              background: url(../assets/images/alligators.png);
+              background: url(./assets/images/alligators.png);
             }
           }
           .elephant__img {
             &::before {
-              background: url(../assets/images/elephants.png);
+              background: url(./assets/images/elephants.png);
             }
           }
           .lemur__img {
             &::before {
-              background: url(../assets/images/lemurs.png);
+              background: url(./assets/images/lemurs.png);
             }
           }
           .img__return {
@@ -597,7 +597,7 @@ h1 {
   margin-bottom: 30px;
   padding-top: 100px;
   height: 575px;
-  background: url(../assets/fonts/pay-and-feed-fon.svg);
+  background: url(./assets/fonts/pay-and-feed-fon.svg);
   background-repeat: repeat-x;
   background-size: auto auto;
   background-position: bottom;
@@ -641,13 +641,13 @@ h1 {
           top: 25%;
         }
         &:first-child:after {
-          content: url(../assets/icons/donate-ico.svg);
+          content: url(./assets/icons/donate-ico.svg);
         }
         &:nth-child(2):after {
-          content: url(../assets/icons/trust-ico.svg);
+          content: url(./assets/icons/trust-ico.svg);
         }
         &:nth-child(3):after {
-          content: url(../assets/icons/monkey-ico.svg);
+          content: url(./assets/icons/monkey-ico.svg);
         }
       }
       .pay__circle {
@@ -667,7 +667,7 @@ h1 {
         margin-left: 320px;
         &::after {
           position: absolute;
-          content: url(../assets/icons/right-arrow-2-ico.svg);
+          content: url(./assets/icons/right-arrow-2-ico.svg);
           margin-left: 52%;
           margin-top: -12px;
         }
@@ -702,7 +702,7 @@ h1 {
       color: $black;
       &::after {
         position: absolute;
-        content: url(../assets/icons/message-ico.svg);
+        content: url(./assets/icons/message-ico.svg);
         left: 0;
         padding-left: 15px;
       }
@@ -793,37 +793,37 @@ h1 {
       }
       .panda__img {
         &::before {
-          background: url(../assets/images/Panda.png);
+          background: url(./assets/images/Panda.png);
           background-size: 100%;
         }
       }
       .eagle__img {
         &::before {
-          background: url(../assets/images/eagles.png);
+          background: url(./assets/images/eagles.png);
           background-size: 100%;
         }
       }
       .gorilla__img {
         &::before {
-          background: url(../assets/images/gorillas.png);
+          background: url(./assets/images/gorillas.png);
           background-size: 100%;
         }
       }
       .alligator__img {
         &::before {
-          background: url(../assets/images/alligators.png);
+          background: url(./assets/images/alligators.png);
           background-size: 100%;
         }
       }
       .elephant__img {
         &::before {
-          background: url(../assets/images/elephants.png);
+          background: url(./assets/images/elephants.png);
           background-size: 100%;
         }
       }
       .lemur__img {
         &::before {
-          background: url(../assets/images/lemurs.png);
+          background: url(./assets/images/lemurs.png);
           background-size: 100%;
         }
       }
@@ -858,14 +858,14 @@ h1 {
       margin-top: 8px;
     }
     .left__arrow {
-      content: url(../assets/icons/left-arrow-ico.svg);
+      content: url(./assets/icons/left-arrow-ico.svg);
       cursor: pointer;
       &:hover {
         transform: scale(1.3);
       }
     }
     .right__arrow {
-      content: url(../assets/icons/right-arrow-ico.svg);
+      content: url(./assets/icons/right-arrow-ico.svg);
       cursor: pointer;
       &:hover {
         transform: scale(1.3);
@@ -938,7 +938,6 @@ h1 {
     margin-left: 50%;
     transform: translateX(-50%);
     width: 570px;
-    // height: 775px;
     background: #fff;
     border-radius: 23px;
     .login-logout__header {
@@ -968,7 +967,7 @@ h1 {
       @include FacebookBtn;
       margin-right: 10px;
       &::after {
-        content: url(../assets/icons/Google.svg);
+        content: url(./assets/icons/Google.svg);
       }
     }
     .facebook__sign-in {
