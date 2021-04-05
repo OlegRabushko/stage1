@@ -1057,7 +1057,7 @@ h1 {
 }
 
 .look__animals__container .look__animals__block .look__animals__img-rotation .panda__img::before {
-  background: url(./assets/images/Panda.png);
+  background: url(./assets/images/panda.png);
   background-size: 100%;
 }
 
