@@ -917,13 +917,13 @@ a:hover {
 
 @media (max-width: 800px) {
   .side-cameras {
-    width: 86vw;
+    width: 84vw;
   }
 }
 
 @media (max-width: 620px) {
   .side-cameras {
-    width: 83vw;
+    width: 81vw;
   }
 }
 
