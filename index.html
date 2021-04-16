@@ -19,7 +19,20 @@
     <div class="header__container">
       <header class="header__block">
         <a href="#"><img src="./assets/icons/logo.svg" alt="logo" class="logo__header"></a>
-        <ul>
+        <div class="header__burger__block">
+          <img src="./assets/icons/burger-menu-ico.svg" alt="" class="header__burger">
+          <ul class="header__menu__1100">
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="./map/map.html">MAP</a></li>
+            <li><a href="./zoos/panda/panda.html">ZOOS</a></li>
+            <li><a href="./contacts/error.html">CONTACT US</a></li>
+            <li><a href="https://www.figma.com/file/vzrwoqf0kSG1uOify8BRBR/online-zoo?node-id=0%3A1">DESIGN</a>
+            </li>
+            <li><a href="#">MY ACCOUNT</a>
+            </li>
+          </ul>
+        </div>
+        <ul class="header__menu">
           <li><a href="#">ABOUT</a></li>
           <li><a href="./map/map.html">MAP</a></li>
           <li><a href="./zoos/panda/panda.html">ZOOS</a></li>
@@ -28,9 +41,10 @@
           </li>
         </ul>
         <div class="log__container">
-          <div class="search__block"> <input type="search" class="search__input">
+          <div class="search__block"> <input type="text" class="search__input">
             <img src="./assets/icons/ico-search.svg" alt="search" class="search__ico">
           </div>
+          <img src="./assets/icons/account-ico.svg" alt="account" class="account__btn">
           <button class="btn__login">LOG IN</button>
           <button class="btn__logout">LOG OUT</button>
         </div>
@@ -44,7 +58,10 @@
           <div class="top__text_2">animals online</div>
           <p class="info__text">Observe different animals from around the world online in live time. Help
             volunteers to take a good care of animals, donate to your favorite ones.</p>
-          <a href="./zoos/panda/panda.html"><button class="btn__watch">WATCH NOW</button></a>
+          <div class="watch__your__animal__btns">
+            <a href="./zoos/panda/panda.html"><button class="btn__watch">WATCH NOW</button></a>
+            <button class="btn__donate">DONATE</button>
+          </div>
         </div>
         <div class="main__panda">
           <div class="fon__for__panda">
@@ -87,9 +104,11 @@
 
     <div class="pets__in__zoo__container">
       <div class="pets__in__zoo__block">
-        <span class="name__span">PETS IN ZOO</span>
-        <a href="./map/map.html"> <button class="btn__choose__favorite">
-            CHOOSE YOUR FAVORITE</button></a>
+        <div class="pet__in__zoo__top-container">
+          <div class="name__span">PETS IN ZOO</div>
+          <a href="./map/map.html"> <button class="btn__choose__favorite">
+              CHOOSE YOUR FAVORITE</button></a>
+        </div>
         <div class="left__arrow"></div>
         <div class="right__arrow"></div>
         <div class="pets__block">
@@ -194,8 +213,10 @@
     </div>
     <div class="pay__and__feed__container">
       <div class="pay__and__feed__block">
-        <span class="pay__top__text">PAY AND FEED</span>
-        <button class="btn__donate">DONATE TO VOLUNTEERS</button>
+        <div class="pay__and__feed__top-container">
+          <div class="pay__top__text">PAY AND FEED</div>
+          <button class="btn__donate">DONATE TO VOLUNTEERS</button>
+        </div>
         <div class="pay__circles__container">
           <div class="pay__circle__block">
             <div class="pay__circle"></div>
@@ -216,8 +237,10 @@
     </div>
     <div class="testimonials__container">
       <div class="testimonials__block">
-        <span class="testimonials__top__text">TESTIMONIALS</span>
-        <button class="btn__feedback">LEAVE FEEDBACK</button>
+        <div class="testimonials__top-container">
+          <div class="testimonials__top__text">TESTIMONIALS</div>
+          <button class="btn__feedback">LEAVE FEEDBACK</button>
+        </div>
         <div class="comments__block">
           <div class="comment__block">
             <div class="info__comment">
@@ -314,6 +337,7 @@
             <div class="right__arrow"></div>
           </div>
         </div>
+        <img src="./assets/icons/right-arrow-ico.svg" alt="" class="bottom__arrow">
       </div>
     </div>
     <footer class="footer__container">
