@@ -78,12 +78,22 @@ a {
       width: 105px;
       margin-right: 50px;
       cursor: pointer;
+      @media (max-width: 1300px) {
+        margin-left: 20px;
+      }
       @media (max-width: 710px) {
         width: 50px;
         margin-top: 10px;
       }
+      @media (max-width: 700px) {
+        margin-left: 5px;
+      }
       @media (max-width: 500px) {
         margin-top: 0px;
+      }
+      @media (max-width: 400px) {
+        margin-top: -2px;
+        margin-left: -2px;
       }
     }
     .header__burger__block {
@@ -138,6 +148,7 @@ a {
         }
         @media (max-width: 710px) {
           width: 35px;
+          margin-right: 10px;
         }
       }
       @media (max-width: 1100px) {
@@ -168,6 +179,9 @@ a {
             border-bottom: 2px solid $blue-white;
           }
         }
+      }
+      @media (max-width: 1300px) {
+        max-width: 480px;
       }
       @media (max-width: 1100px) {
         display: none;
@@ -227,6 +241,7 @@ a {
         @media (max-width: 1300px) {
           display: block;
           margin-left: 10px;
+          margin-right: 20px;
         }
       }
       button {
@@ -261,6 +276,9 @@ a {
     @media (max-width: 500px) {
       height: 60px;
     }
+    @media (max-width: 400px) {
+      height: 50px;
+    }
   }
   h1 {
     display: none;
@@ -292,9 +310,15 @@ a {
         background-color: $bg;
         border-radius: 52% 52% 67% 40% / 45% 47% 60% 62%;
         animation: spin 5s infinite linear;
+        @media (max-width: 1300px) {
+          width: 82px;
+          margin-left: 10px;
+          height: 80px;
+        }
         @media (max-width: 800px) {
           width: 51px;
           height: 50px;
+          margin-left: 0;
         }
         @media (max-width: 500px) {
           display: none;
@@ -328,6 +352,10 @@ a {
         position: relative;
         width: 76px;
         height: 73px;
+        @media (max-width: 1300px) {
+          width: 62px;
+          height: 60px;
+        }
         @media (max-width: 800px) {
           width: 41px;
           height: 40px;
@@ -343,6 +371,7 @@ a {
         line-height: 18px;
         @media (max-width: 800px) {
           font-size: 12px;
+          margin-top: 5px;
           text-transform: capitalize;
         }
         @media (max-width: 500px) {
@@ -372,15 +401,27 @@ a {
         @media (max-width: 500px) {
           position: absolute;
           display: block;
-          right: 5%;
-          top: 20px;
+          right: 10%;
+          top: 15px;
         }
       }
       @media (max-width: 500px) {
         box-shadow: 0 3px 5px 0px #196469;
         border-bottom: none;
       }
+      @media (max-width: 1300px) {
+        margin-bottom: 5px;
+      }
+      @media (max-width: 700px) {
+        margin-bottom: 22px;
+      }
+      @media (max-width: 500px) {
+        height: 60px;
+        margin-top: -10px;
+        margin-bottom: 0px;
+      }
     }
+
     @media (max-width: 800px) {
       width: 50px;
       margin-top: 20px;
@@ -408,6 +449,9 @@ a {
         order: 6;
       }
     }
+    @media (max-width: 700px) {
+      margin-top: 10px;
+    }
   }
   .panda__block {
     width: 100%;
@@ -423,8 +467,16 @@ a {
           font-size: 24px;
           line-height: 28px;
           color: $black;
+          @media (max-width: 1300px) {
+            margin-bottom: 5px;
+          }
           @media (max-width: 800px) {
             font-size: 18px;
+          }
+          @media (max-width: 400px) {
+            margin-top: -10px;
+            margin-left: -5px;
+            margin-bottom: 10px;
           }
         }
         .main-cameras__icons {
@@ -445,19 +497,35 @@ a {
               width: 24px;
             }
           }
+          @media (max-width: 1300px) {
+            margin-right: 40px;
+          }
           @media (max-width: 800px) {
-            width: 85px;
+            width: 95px;
+            margin-right: 15px;
+            margin-top: 5px;
           }
           @media (max-width: 400px) {
             width: 60px;
+            margin-top: -12px;
+            margin-right: -5px;
           }
+        }
+        @media (max-width: 1300px) {
+          margin-bottom: 5px;
         }
         @media (max-width: 1100px) {
           margin-bottom: 0px;
         }
       }
+      @media (max-width: 1300px) {
+        margin-bottom: 25px;
+      }
       @media (max-width: 800px) {
-        margin-bottom: 20px;
+        margin-bottom: 13px;
+      }
+      @media (max-width: 400px) {
+        margin-bottom: 7px;
       }
     }
     .main-cameras__text {
@@ -468,8 +536,17 @@ a {
       text-transform: capitalize;
       text-align: left;
       margin-bottom: 10px;
+      @media (max-width: 1300px) {
+        margin-left: 10px;
+      }
       @media (max-width: 800px) {
+        margin-top: -10px;
+        margin-left: 0;
         font-size: 14px;
+        margin-bottom: 10px;
+      }
+      @media (max-width: 400px) {
+        margin-left: -5px;
       }
     }
     .panda__video {
@@ -477,17 +554,23 @@ a {
       height: 605px;
       border-radius: 20px;
       @media (max-width: 1210px) {
-        height: 59vw;
+        height: 50vw;
+        width: 98%;
       }
       @media (max-width: 1000px) {
         height: 49vw;
       }
       @media (max-width: 400px) {
         height: 55vw;
+        width: 100%;
+        border-radius: 10px;
       }
     }
+    @media (max-width: 1300px) {
+      margin: 35px 0 0 40px;
+    }
     @media (max-width: 800px) {
-      margin: 20px 0 0 20px;
+      margin: 10px 0 0 25px;
     }
     @media (max-width: 500px) {
       @include blocksSize;
@@ -510,6 +593,7 @@ a {
     margin-bottom: 10px;
     @media (max-width: 800px) {
       font-size: 14px;
+      margin-bottom: 0px;
     }
   }
   .side-cameras__slider {
@@ -529,6 +613,10 @@ a {
           width: 25vw;
           height: 200px;
         }
+        @media (max-width: 1200px) {
+          width: 24vw;
+          height: 16vw;
+        }
         @media (max-width: 1000px) {
           width: 35vw;
           height: 22vw;
@@ -538,6 +626,7 @@ a {
         }
         @media (max-width: 800px) {
           width: 235px;
+          height: 24vw;
         }
         @media (max-width: 620px) {
           width: 35vw;
@@ -545,7 +634,7 @@ a {
         @media (max-width: 450px) {
           width: 96%;
           margin-right: 5px;
-          height: 26vw;
+          height: 28vw;
         }
       }
       &::before {
@@ -567,6 +656,10 @@ a {
           width: 25vw;
           height: 200px;
         }
+        @media (max-width: 1200px) {
+          width: 24vw;
+          height: 16vw;
+        }
         @media (max-width: 1000px) {
           width: 35vw;
           height: 22vw;
@@ -576,13 +669,14 @@ a {
         }
         @media (max-width: 800px) {
           width: 235px;
+          height: 24vw;
         }
         @media (max-width: 620px) {
           width: 35vw;
         }
         @media (max-width: 450px) {
           width: 95%;
-          height: 26vw;
+          height: 28vw;
           margin-right: 5px;
         }
       }
@@ -619,8 +713,20 @@ a {
           display: none;
         }
       }
+      @media (max-width: 1200px) {
+        margin-left: -15px;
+        margin-right: 15px;
+      }
+      @media (max-width: 700px) {
+        margin-left: -10px;
+        margin-right: 10px;
+        margin-top: 15px;
+      }
       @media (max-width: 500px) {
         margin: 0;
+      }
+      @media (max-width: 400px) {
+        margin-top: -5px;
       }
     }
   }
@@ -664,7 +770,10 @@ a {
       text-transform: none;
       margin-bottom: 40px;
       @media (max-width: 800px) {
-        margin-bottom: 25px;
+        margin-bottom: 17px;
+      }
+      @media (max-width: 400px) {
+        margin-bottom: 22px;
       }
     }
     a {
@@ -677,6 +786,8 @@ a {
     }
     @media (max-width: 1100px) {
       margin-right: 50px;
+      height: 400px;
+      margin-bottom: 0px;
     }
   }
   .information__facts-blog {
@@ -698,7 +809,7 @@ a {
         content: url(../../assets/icons/Vector-30.svg);
       }
       @media (max-width: 400px) {
-        margin-bottom: 30px;
+        margin-bottom: 12px;
         font-size: 12px;
       }
     }
@@ -709,6 +820,9 @@ a {
     @media (max-width: 800px) {
       width: 80vw;
       margin-right: 0px;
+    }
+    @media (max-width: 800px) {
+      margin-top: 70px;
     }
   }
   .information__heading-text {
@@ -721,12 +835,25 @@ a {
     @media (max-width: 800px) {
       font-size: 18px;
     }
+    @media (max-width: 400px) {
+      margin-bottom: 15px;
+    }
+  }
+  @media (max-width: 1300px) {
+    margin-top: 60px;
   }
   @media (max-width: 1100px) {
     flex-wrap: wrap;
+    height: 1200px;
   }
   @media (max-width: 800px) {
     margin-top: 40px;
+    height: 930px;
+  }
+  @media (max-width: 400px) {
+    margin-top: 20px;
+    margin-left: -5px;
+    height: 1020px;
   }
 }
 .donate {
@@ -821,25 +948,31 @@ a {
       @media (max-width: 1210px) {
         position: absolute;
         margin-top: -60px;
+        height: 40px;
       }
       @media (max-width: 800px) {
-        height: 40px;
         width: 270px;
         font-size: 14px;
+        margin-top: -90px;
       }
       @media (max-width: 400px) {
+        margin-top: -70px;
         margin-left: 46%;
       }
     }
   }
+  @media (max-width: 1300px) {
+    height: 390px;
+  }
   @media (max-width: 800px) {
     background-position: -140px -30px;
     overflow: hidden;
+    height: 380px;
   }
   @media (max-width: 400px) {
     background-image: none;
     background-color: $bg;
-    height: 300px;
+    height: 280px;
   }
 }
 
@@ -861,8 +994,15 @@ a {
       width: 105px;
       margin-right: 50px;
       cursor: pointer;
-      @media (max-width: 710px) {
+      @media (max-width: 1300px) {
+        margin-top: -35px;
+        margin-left: 25px;
+        margin-right: 40px;
+      }
+      @media (max-width: 720px) {
         width: 50px;
+        margin-top: 0px;
+        margin-left: 7px;
       }
     }
     ul {
@@ -889,6 +1029,9 @@ a {
           }
         }
       }
+      @media (max-width: 1300px) {
+        width: 410px;
+      }
       @media (max-width: 1100px) {
         display: none;
       }
@@ -898,9 +1041,12 @@ a {
       margin: auto 0 auto auto;
       color: $blue-white;
       @media (max-width: 710px) {
-        font-size: 14px;
+        font-size: 12px;
         width: 160px;
       }
+    }
+    @media (max-width: 1300px) {
+      height: 115px;
     }
     @media (max-width: 710px) {
       height: 80px;
