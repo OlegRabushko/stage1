@@ -2622,7 +2622,7 @@ h1 {
 
 @media (max-width: 1400px) {
   .pay__and__feed__container .pay__and__feed__block .pay__and__feed__top-container .btn__donate {
-    width: 300px;
+    width: 285px;
     height: 40px;
   }
 }
@@ -2645,6 +2645,7 @@ h1 {
 @media (max-width: 640px) {
   .pay__and__feed__container .pay__and__feed__block .pay__and__feed__top-container .btn__donate {
     margin-bottom: 35px;
+    margin-right: 40px;
   }
 }
 
