@@ -858,6 +858,13 @@ a:hover {
     width: 100%;
     margin: auto;
     margin: 0;
+    margin-left: -6px;
+  }
+}
+
+@media (max-width: 330px) {
+  .panda__container .panda__block {
+    margin-left: 0;
   }
 }
 
@@ -1141,13 +1148,6 @@ a:hover {
 @media (max-width: 550px) {
   .side-cameras {
     width: 80vw;
-  }
-}
-
-@media (max-width: 510px) {
-  .side-cameras {
-    margin-right: 0px;
-    padding-right: 0;
   }
 }
 

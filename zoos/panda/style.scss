@@ -575,6 +575,10 @@ a {
     @media (max-width: 510px) {
       @include blocksSize;
       margin: 0;
+      margin-left: -6px;
+    }
+    @media (max-width: 330px) {
+      margin-left: 0;
     }
   }
   @media (max-width: 500px) {
@@ -750,10 +754,6 @@ a {
   }
   @media (max-width: 550px) {
     width: 80vw;
-  }
-  @media (max-width: 510px) {
-    margin-right: 0px;
-    padding-right: 0;
   }
   @media (max-width: 500px) {
     width: 86vw;
