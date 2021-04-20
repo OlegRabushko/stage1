@@ -1073,6 +1073,9 @@ h1 {
           font-size: 18px;
           margin-top: -30px;
         }
+        @media (max-width: 640px) {
+          margin-top: -10px;
+        }
         @media (max-width: 500px) {
           margin-top: -50px;
         }
@@ -1118,6 +1121,9 @@ h1 {
           margin-bottom: 0px;
           top: -30px;
         }
+        @media (max-width: 640px) {
+          margin-top: 15px;
+        }
         @media (max-width: 500px) {
           position: absolute;
           margin-top: 665px;
@@ -1125,10 +1131,6 @@ h1 {
         }
         @media (max-width: 380px) {
           margin-left: -75vw;
-        }
-        @media (max-width: 360px) {
-          margin-left: -85vw;
-          font-size: 14px;
         }
         @media (max-width: 360px) {
           margin-left: -88vw;
@@ -1478,6 +1480,9 @@ h1 {
             transform: translateX(-50%) scale(0.75);
           }
           @media (max-width: 400px) {
+            margin-left: -35px;
+          }
+          @media (max-width: 350px) {
             margin-left: -15px;
           }
         }
@@ -1496,6 +1501,9 @@ h1 {
             transform: translateX(-50%) scale(0.75);
           }
           @media (max-width: 400px) {
+            margin-left: -35px;
+          }
+          @media (max-width: 350px) {
             margin-left: -15px;
           }
         }
@@ -1514,6 +1522,9 @@ h1 {
             transform: translateX(-50%) scale(0.75);
           }
           @media (max-width: 400px) {
+            margin-left: -35px;
+          }
+          @media (max-width: 350px) {
             margin-left: -15px;
           }
         }
@@ -1576,6 +1587,10 @@ h1 {
             margin-top: 10px;
             margin-left: 0;
           }
+          @media (max-width: 640px) {
+            margin-top: -10px;
+            margin-left: 0vw;
+          }
           @media (max-width: 500px) {
             transform: rotate(90deg);
             margin-top: 150px;
@@ -1603,7 +1618,7 @@ h1 {
           width: 1%;
         }
       }
-      @media (max-width: 641px) {
+      @media (max-width: 640px) {
         height: 200px;
       }
       @media (max-width: 500px) {
@@ -1635,10 +1650,10 @@ h1 {
     margin-top: 50px;
     padding-top: 70px;
   }
-  @media (max-width: 641px) {
+  @media (max-width: 640px) {
     background-position: 0 -110px;
     padding-top: 60px;
-    margin-top: -10px;
+    margin-top: 15px;
   }
   @media (max-width: 500px) {
     height: 910px;
@@ -1907,6 +1922,9 @@ h1 {
       @media (max-width: 780px) {
         margin-bottom: 30px;
         font-size: 18px;
+      }
+      @media (max-width: 640px) {
+        margin-top: 10px;
       }
     }
     .look__animals__slider {

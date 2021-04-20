@@ -1580,6 +1580,12 @@ h1 {
   }
 }
 
+@media (max-width: 640px) {
+  .pets__in__zoo__container .pets__in__zoo__block .pet__in__zoo__top-container .name__span {
+    margin-top: -10px;
+  }
+}
+
 @media (max-width: 500px) {
   .pets__in__zoo__container .pets__in__zoo__block .pet__in__zoo__top-container .name__span {
     margin-top: -50px;
@@ -1644,6 +1650,12 @@ h1 {
   }
 }
 
+@media (max-width: 640px) {
+  .pets__in__zoo__container .pets__in__zoo__block .pet__in__zoo__top-container .btn__choose__favorite {
+    margin-top: 15px;
+  }
+}
+
 @media (max-width: 500px) {
   .pets__in__zoo__container .pets__in__zoo__block .pet__in__zoo__top-container .btn__choose__favorite {
     position: absolute;
@@ -1655,13 +1667,6 @@ h1 {
 @media (max-width: 380px) {
   .pets__in__zoo__container .pets__in__zoo__block .pet__in__zoo__top-container .btn__choose__favorite {
     margin-left: -75vw;
-  }
-}
-
-@media (max-width: 360px) {
-  .pets__in__zoo__container .pets__in__zoo__block .pet__in__zoo__top-container .btn__choose__favorite {
-    margin-left: -85vw;
-    font-size: 14px;
   }
 }
 
@@ -2713,6 +2718,12 @@ h1 {
 
 @media (max-width: 400px) {
   .pay__and__feed__container .pay__and__feed__block .pay__circles__container .pay__circle__block:first-child:after {
+    margin-left: -35px;
+  }
+}
+
+@media (max-width: 350px) {
+  .pay__and__feed__container .pay__and__feed__block .pay__circles__container .pay__circle__block:first-child:after {
     margin-left: -15px;
   }
 }
@@ -2747,6 +2758,12 @@ h1 {
 
 @media (max-width: 400px) {
   .pay__and__feed__container .pay__and__feed__block .pay__circles__container .pay__circle__block:nth-child(2):after {
+    margin-left: -35px;
+  }
+}
+
+@media (max-width: 350px) {
+  .pay__and__feed__container .pay__and__feed__block .pay__circles__container .pay__circle__block:nth-child(2):after {
     margin-left: -15px;
   }
 }
@@ -2780,6 +2797,12 @@ h1 {
 }
 
 @media (max-width: 400px) {
+  .pay__and__feed__container .pay__and__feed__block .pay__circles__container .pay__circle__block:nth-child(3):after {
+    margin-left: -35px;
+  }
+}
+
+@media (max-width: 350px) {
   .pay__and__feed__container .pay__and__feed__block .pay__circles__container .pay__circle__block:nth-child(3):after {
     margin-left: -15px;
   }
@@ -2877,6 +2900,13 @@ h1 {
   }
 }
 
+@media (max-width: 640px) {
+  .pay__and__feed__container .pay__and__feed__block .pay__circles__container .line::after {
+    margin-top: -10px;
+    margin-left: 0vw;
+  }
+}
+
 @media (max-width: 500px) {
   .pay__and__feed__container .pay__and__feed__block .pay__circles__container .line::after {
     -webkit-transform: rotate(90deg);
@@ -2924,7 +2954,7 @@ h1 {
   }
 }
 
-@media (max-width: 641px) {
+@media (max-width: 640px) {
   .pay__and__feed__container .pay__and__feed__block .pay__circles__container {
     height: 200px;
   }
@@ -2979,11 +3009,11 @@ h1 {
   }
 }
 
-@media (max-width: 641px) {
+@media (max-width: 640px) {
   .pay__and__feed__container {
     background-position: 0 -110px;
     padding-top: 60px;
-    margin-top: -10px;
+    margin-top: 15px;
   }
 }
 
@@ -3432,6 +3462,12 @@ h1 {
   .look__animals__container .look__animals__block .look__animals__top__text {
     margin-bottom: 30px;
     font-size: 18px;
+  }
+}
+
+@media (max-width: 640px) {
+  .look__animals__container .look__animals__block .look__animals__top__text {
+    margin-top: 10px;
   }
 }
 
