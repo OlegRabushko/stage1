@@ -44,6 +44,7 @@
           <div class="search__block"> <input type="text" class="search__input">
             <img src="./assets/icons/ico-search.svg" alt="search" class="search__ico">
           </div>
+          <div class="user__name"></div>
           <img src="./assets/icons/account-ico.svg" alt="account" class="account__btn">
           <button class="btn__login">LOG IN</button>
           <button class="btn__logout">LOG OUT</button>
@@ -112,102 +113,202 @@
         <div class="right__arrow"></div>
         <div class="left__arrow"></div>
         <div class="pets__block">
-          <a href="./zoos/panda/panda.html">
-            <div class="pet__panda">
-              <div class="flex__imgs">
-                <div class="img__rotation">
-                  <div class="img__return panda__img"></div>
+          <div class="blocks active">
+            <a href="./zoos/panda/panda.html">
+              <div class="pet__panda">
+                <div class="flex__imgs">
+                  <div class="img__rotation">
+                    <div class="img__return panda__img"></div>
+                  </div>
+                </div>
+                <div class="pet__info">
+                  <div class="pet__texts">
+                    <div class="top__text">Pandas</div>
+                    <div class="location__text">Shenshuping Gengda Panda Center</div>
+                  </div>
+                  <img src="./assets/icons/tv-ico.svg" alt="tv__ico" class="tv__ico">
                 </div>
               </div>
-              <div class="pet__info">
-                <div class="pet__texts">
-                  <div class="top__text">Pandas</div>
-                  <div class="location__text">Shenshuping Gengda Panda Center</div>
+            </a>
+            <a href="./zoos/eagle/eagle.html">
+              <div class="pet__eagle">
+                <div class="flex__imgs">
+                  <div class="img__rotation">
+                    <div class="img__return eagle__img"></div>
+                  </div>
                 </div>
-                <img src="./assets/icons/tv-ico.svg" alt="tv__ico" class="tv__ico">
-              </div>
-            </div>
-          </a>
-          <a href="./zoos/eagle/eagle.html">
-            <div class="pet__eagle">
-              <div class="flex__imgs">
-                <div class="img__rotation">
-                  <div class="img__return eagle__img"></div>
-                </div>
-              </div>
-              <div class="pet__info">
-                <div class="pet__texts">
-                  <div class="top__text">Eagles</div>
-                  <div class="location__text">Catalina Island</div>
-                </div>
-                <img src="./assets/icons/tv-ico.svg" alt="tv__ico" class="tv__ico">
-              </div>
-            </div>
-          </a>
-          <a href="./zoos/gorilla/gorilla.html">
-            <div class="pet__gorilla">
-              <div class="flex__imgs">
-                <div class="img__rotation">
-                  <div class="img__return gorilla__img"></div>
+                <div class="pet__info">
+                  <div class="pet__texts">
+                    <div class="top__text">Eagles</div>
+                    <div class="location__text">Catalina Island</div>
+                  </div>
+                  <img src="./assets/icons/tv-ico.svg" alt="tv__ico" class="tv__ico">
                 </div>
               </div>
-              <div class="pet__info">
-                <div class="pet__texts">
-                  <div class="top__text">Gorillas</div>
-                  <div class="location__text">GRACE gorillas</div>
+            </a>
+            <a href="./zoos/gorilla/gorilla.html">
+              <div class="pet__gorilla">
+                <div class="flex__imgs">
+                  <div class="img__rotation">
+                    <div class="img__return gorilla__img"></div>
+                  </div>
                 </div>
-                <img src="./assets/icons/tv-ico.svg" alt="tv__ico" class="tv__ico">
-              </div>
-            </div>
-          </a>
-          <a href="./zoos/alligator/alligator.html">
-            <div class="pet__alligator">
-              <div class="flex__imgs">
-                <div class="img__rotation">
-                  <div class="img__return alligator__img"></div>
-                </div>
-              </div>
-              <div class="pet__info">
-                <div class="pet__texts">
-                  <div class="top__text">Alligators</div>
-                  <div class="location__text">St. Augustine's Alligators Farm Zoological Park</div>
-                </div>
-                <img src="./assets/icons/tv-ico.svg" alt="tv__ico" class="tv__ico">
-              </div>
-            </div>
-          </a>
-          <a href="./zoos/elephant/elephant.html">
-            <div class="pet__elephant">
-              <div class="flex__imgs">
-                <div class="img__rotation">
-                  <div class="img__return elephant__img"></div>
+                <div class="pet__info">
+                  <div class="pet__texts">
+                    <div class="top__text">Gorillas</div>
+                    <div class="location__text">GRACE gorillas</div>
+                  </div>
+                  <img src="./assets/icons/tv-ico.svg" alt="tv__ico" class="tv__ico">
                 </div>
               </div>
-              <div class="pet__info">
-                <div class="pet__texts">
-                  <div class="top__text">Elephants</div>
-                  <div class="location__text">Tembe Elephant Park</div>
+            </a>
+            <a href="./zoos/alligator/alligator.html">
+              <div class="pet__alligator">
+                <div class="flex__imgs">
+                  <div class="img__rotation">
+                    <div class="img__return alligator__img"></div>
+                  </div>
                 </div>
-                <img src="./assets/icons/tv-ico.svg" alt="tv__ico" class="tv__ico">
-              </div>
-            </div>
-          </a>
-          <a href="./zoos/lemur/lemur.html">
-            <div class="pet__lemur">
-              <div class="flex__imgs">
-                <div class="img__rotation">
-                  <div class="img__return lemur__img"></div>
+                <div class="pet__info">
+                  <div class="pet__texts">
+                    <div class="top__text">Alligators</div>
+                    <div class="location__text">St. Augustine's Alligators Farm Zoological Park</div>
+                  </div>
+                  <img src="./assets/icons/tv-ico.svg" alt="tv__ico" class="tv__ico">
                 </div>
               </div>
-              <div class="pet__info">
-                <div class="pet__texts">
-                  <div class="top__text">Lemurs</div>
-                  <div class="location__text">Madagascar</div>
+            </a>
+            <a href="./zoos/elephant/elephant.html">
+              <div class="pet__elephant">
+                <div class="flex__imgs">
+                  <div class="img__rotation">
+                    <div class="img__return elephant__img"></div>
+                  </div>
                 </div>
-                <img src="./assets/icons/tv-ico.svg" alt="tv__ico" class="tv__ico">
+                <div class="pet__info">
+                  <div class="pet__texts">
+                    <div class="top__text">Elephants</div>
+                    <div class="location__text">Tembe Elephant Park</div>
+                  </div>
+                  <img src="./assets/icons/tv-ico.svg" alt="tv__ico" class="tv__ico">
+                </div>
               </div>
-            </div>
-          </a>
+            </a>
+            <a href="./zoos/lemur/lemur.html">
+              <div class="pet__lemur">
+                <div class="flex__imgs">
+                  <div class="img__rotation">
+                    <div class="img__return lemur__img"></div>
+                  </div>
+                </div>
+                <div class="pet__info">
+                  <div class="pet__texts">
+                    <div class="top__text">Lemurs</div>
+                    <div class="location__text">Madagascar</div>
+                  </div>
+                  <img src="./assets/icons/tv-ico.svg" alt="tv__ico" class="tv__ico">
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="blocks">
+            <a href="./zoos/panda/panda.html">
+              <div class="pet__lion">
+                <div class="flex__imgs">
+                  <div class="img__rotation">
+                    <div class="img__return lion__img"></div>
+                  </div>
+                </div>
+                <div class="pet__info">
+                  <div class="pet__texts">
+                    <div class="top__text">Lion</div>
+                    <div class="location__text">Africa</div>
+                  </div>
+                  <img src="./assets/icons/tv-ico.svg" alt="tv__ico" class="tv__ico">
+                </div>
+              </div>
+            </a>
+            <a href="./zoos/panda/panda.html">
+              <div class="pet__bear">
+                <div class="flex__imgs">
+                  <div class="img__rotation">
+                    <div class="img__return bear__img"></div>
+                  </div>
+                </div>
+                <div class="pet__info">
+                  <div class="pet__texts">
+                    <div class="top__text">Bear</div>
+                    <div class="location__text">Europe</div>
+                  </div>
+                  <img src="./assets/icons/tv-ico.svg" alt="tv__ico" class="tv__ico">
+                </div>
+              </div>
+            </a>
+            <a href="./zoos/panda/panda.html">
+              <div class="pet__snake">
+                <div class="flex__imgs">
+                  <div class="img__rotation">
+                    <div class="img__return snake__img"></div>
+                  </div>
+                </div>
+                <div class="pet__info">
+                  <div class="pet__texts">
+                    <div class="top__text">Snake</div>
+                    <div class="location__text">Asia</div>
+                  </div>
+                  <img src="./assets/icons/tv-ico.svg" alt="tv__ico" class="tv__ico">
+                </div>
+              </div>
+            </a>
+            <a href="./zoos/panda/panda.html">
+              <div class="pet__toucan">
+                <div class="flex__imgs">
+                  <div class="img__rotation">
+                    <div class="img__return toucan__img"></div>
+                  </div>
+                </div>
+                <div class="pet__info">
+                  <div class="pet__texts">
+                    <div class="top__text">Toucan</div>
+                    <div class="location__text">Brasilia</div>
+                  </div>
+                  <img src="./assets/icons/tv-ico.svg" alt="tv__ico" class="tv__ico">
+                </div>
+              </div>
+            </a>
+            <a href="./zoos/panda/panda.html">
+              <div class="pet__buffalo">
+                <div class="flex__imgs">
+                  <div class="img__rotation">
+                    <div class="img__return buffalo__img"></div>
+                  </div>
+                </div>
+                <div class="pet__info">
+                  <div class="pet__texts">
+                    <div class="top__text">buffalo</div>
+                    <div class="location__text">Africa</div>
+                  </div>
+                  <img src="./assets/icons/tv-ico.svg" alt="tv__ico" class="tv__ico">
+                </div>
+              </div>
+            </a>
+            <a href="./zoos/panda/panda.html">
+              <div class="pet__koala">
+                <div class="flex__imgs">
+                  <div class="img__rotation">
+                    <div class="img__return koala__img"></div>
+                  </div>
+                </div>
+                <div class="pet__info">
+                  <div class="pet__texts">
+                    <div class="top__text">Koala</div>
+                    <div class="location__text">Australia</div>
+                  </div>
+                  <img src="./assets/icons/tv-ico.svg" alt="tv__ico" class="tv__ico">
+                </div>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -245,29 +346,50 @@
           <div class="comment__block">
             <div class="info__comment">
               <div class="date__comment">20 Decepmer 2020</div>
-              <div class="text__comment">Awesome place to observe my favourite aligators at Florida, the
-                quality of the video is great. </div>
+              <div class="text__comment">Great place to observe my favourite aligators at Florida, the
+                quality of the video is awesome. Great place to observe my favourite aligators at Florida, the
+                quality of the video is awesome. Great place to observe my favourite aligators at Florida, the
+                quality of the video is awesome. Great place to observe my favourite aligators at Florida, the
+                quality of the video is awesome. </div>
             </div>
             <img src="./assets/images/person-adam.png" alt="person">
             <span class="info__person">Adam, Spain</span>
           </div>
           <div class="comment__block">
             <div class="info__comment">
-              <div class="date__comment">20 Decepmer 2020</div>
-              <div class="text__comment">Awesome place to observe my favourite aligators at Florida, the
-                quality of the video is great. </div>
+              <div class="date__comment">10 September 2021</div>
+              <div class="text__comment">Cool place to observe my favourite aligators at Florida, the
+                quality of the video is top. Cool place to observe my favourite aligators at Florida, the
+                quality of the video is top. Cool place to observe my favourite aligators at Florida, the
+                quality of the video is top. Cool place to observe my favourite aligators at Florida, the
+                quality of the video is top.</div>
             </div>
             <img src="./assets/images/person-cris.png" alt="person">
             <span class="info__person">Chris, Australia</span>
           </div>
           <div class="comment__block">
             <div class="info__comment">
-              <div class="date__comment">20 Decepmer 2020</div>
+              <div class="date__comment">17 July 2020</div>
               <div class="text__comment">Awesome place to observe my favourite aligators at Florida, the
-                quality of the video is great. </div>
+                quality of the video is great. Awesome place to observe my favourite aligators at Florida, the
+                quality of the video is great. Awesome place to observe my favourite aligators at Florida, the
+                quality of the video is great.</div>
             </div>
             <img src="./assets/images/person-emeli.png" alt="person">
             <span class="info__person">Amely, USA</span>
+          </div>
+          <div class="comment__block">
+            <div class="info__comment">
+              <div class="date__comment">04 january 2021</div>
+              <div class="text__comment">Pretty place to observe my favourite aligators at Florida, the
+                quality of the video is beautiful. Pretty place to observe my favourite aligators at Florida, the
+                quality of the video is beautiful.Pretty place to observe my favourite aligators at Florida, the
+                quality of the video is beautiful.Pretty place to observe my favourite aligators at Florida, the
+                quality of the video is beautiful.Pretty place to observe my favourite aligators at Florida, the
+                quality of the video is beautiful.</div>
+            </div>
+            <img src="./assets/images/person-ben.png" alt="person" width="67px">
+            <span class="info__person">Ben, France</span>
           </div>
         </div>
       </div>
@@ -365,21 +487,22 @@
       </div>
       <button class="create-acc">create account</button>
       <button class="login-acc"> log in</button>
-      <button class="google__sign-in">Google Sign in</button>
-      <button class="facebook__sign-in">Facebook Sign in</button>
-      <form>
-        <div class="input__top-text name">name</div>
-        <input class="login-logout__inputs login-logout__name-input" type="text">
+      <button class="google__sign-in log__display-none">Google Sign in</button>
+      <button class="facebook__sign-in log__display-none">Facebook Sign in</button>
+      <form class="form">
+        <div class="input__top-text name log__display-none">name</div>
+        <input class="login-logout__inputs login-logout__name-input log__display-none" maxlength="12" type="text">
         <div class="input__top-text">email</div>
-        <input class="login-logout__inputs" type="email">
+        <input class="login-logout__inputs login-logout__email-input" type="email">
         <div class="input__top-text">password</div>
-        <input class="login-logout__inputs" type="password">
-        <label>
-          <input class="filled-in" type="checkbox" checked="checked">
+        <input class="login-logout__inputs login-logout__password-input" type="password">
+        <label class="log__display-none">
+          <input class="filled-in login-logout__checkbox" type="checkbox">
           <span class="checkbox__text">Agree with the <a href="#">User Agreement</a> and <a href="#">Privacy Policy</a>
           </span>
         </label>
-        <button class="login-logout__btn">send</button>
+        <button class="login-logout__btn" disabled='true'>send</button>
+        <div class="skin__send-btn" disabled='true'></button>
       </form>
     </div>
   </section>

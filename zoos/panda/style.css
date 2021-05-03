@@ -710,7 +710,6 @@ a:hover {
 
 .panda__container .panda__block .main-cameras .main-cameras__top .main-cameras__icons .ico-like:hover,
 .panda__container .panda__block .main-cameras .main-cameras__top .main-cameras__icons .ico-info:hover {
-  background-color: #c5e1e5;
   border-radius: 50%;
 }
 
@@ -726,6 +725,18 @@ a:hover {
   .panda__container .panda__block .main-cameras .main-cameras__top .main-cameras__icons .ico-info {
     width: 24px;
   }
+}
+
+.panda__container .panda__block .main-cameras .main-cameras__top .main-cameras__icons .ico-info:hover {
+  background-color: #c6e9eb;
+}
+
+.panda__container .panda__block .main-cameras .main-cameras__top .main-cameras__icons .ico-like {
+  fill: transparent;
+}
+
+.panda__container .panda__block .main-cameras .main-cameras__top .main-cameras__icons .ico-like:hover {
+  background-color: #fae7ee;
 }
 
 @media (max-width: 1300px) {
@@ -902,8 +913,23 @@ a:hover {
           justify-content: space-between;
 }
 
+.side-cameras .side-cameras__slider .slider__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .side-cameras .side-cameras__slider .video-skin {
   position: relative;
+  cursor: pointer;
+}
+
+.side-cameras .side-cameras__slider .video-skin:hover::after {
+  background-color: transparent;
 }
 
 .side-cameras .side-cameras__slider .video-skin::after {

@@ -487,7 +487,6 @@ a {
           .ico-info {
             cursor: pointer;
             &:hover {
-              background-color: $blue-white;
               border-radius: 50%;
             }
             @media (max-width: 800px) {
@@ -497,6 +496,18 @@ a {
               width: 24px;
             }
           }
+          .ico-info {
+            &:hover {
+              background-color: rgb(198, 233, 235);
+            }
+          }
+          .ico-like {
+            fill: transparent;
+            &:hover {
+              background-color: rgb(250, 231, 238);
+            }
+          }
+
           @media (max-width: 1300px) {
             margin-right: 40px;
           }
@@ -603,8 +614,19 @@ a {
   .side-cameras__slider {
     display: flex;
     justify-content: space-between;
+    .slider__container {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+    }
     .video-skin {
       position: relative;
+      cursor: pointer;
+      &:hover {
+        &::after {
+          background-color: transparent;
+        }
+      }
       &::after {
         content: "";
         position: absolute;
@@ -613,6 +635,7 @@ a {
         height: 240px;
         border-radius: 15px;
         background-color: rgba(255, 255, 255, 0.5);
+
         @media (max-width: 1500px) {
           width: 25vw;
           height: 200px;
