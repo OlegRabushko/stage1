@@ -7,34 +7,25 @@ const zoomOutButton = document.querySelector('.btn__minus');
 const pet = document.querySelector('.map__animal-point');
 
 
-let scaleX = 0.14;
+let scaleX = 0.18;
 let scaleY = 0.27;
+
+let moveYPoint = 0;
+let moveXPoint = '200';
 
 
 mapImage.onmousedown = function (event) {
   let shiftX = event.clientX - mapImage.getBoundingClientRect().left;
   let shiftY = event.clientY - mapImage.getBoundingClientRect().top;
-
-
-  wrapper.append(mapImage);
   moveAt(event.pageX, event.pageY);
   function moveAt(pageX, pageY) {
     const mathBoard = window.innerWidth - wrapper.offsetWidth;
     if (mapImage.width > 1600) {
-      pet.style.left = pageX - shiftX + (window.innerWidth * scaleX) - (mathBoard) + 'px';
+      pet.style.left = pageX - shiftX + (wrapper.offsetWidth * scaleX) - (mathBoard / 2) + 'px';
       pet.style.top = pageY - shiftY + (mapImage.offsetHeight * scaleY) + 'px';
+      moveXPoint = pet.style.left;
     }
-
-    // console.log(window.innerWidth);
-    // console.log(mapImage.offsetW);
-
-
-    // if (mapImage.width > 1900) {
-    //   // pet.style.left = pageX - shiftX + 230 + 'px';
-    //   pet.style.top = pageY - shiftY + 470 + 'px';
-    // }
     mapImage.style.left = pageX - (mathBoard / 2.09) - shiftX + 'px';
-
     mapImage.style.top = pageY - 223 - shiftY + 'px';
     if (pageX <= mathBoard * 0.47 || pageY <= 223) {
       stopDrag();
@@ -42,6 +33,7 @@ mapImage.onmousedown = function (event) {
       stopDrag();
     }
   }
+  wrapper.append(mapImage);
 
   function onMouseMove(event) {
     moveAt(event.pageX, event.pageY);
@@ -58,8 +50,8 @@ mapImage.onmousedown = function (event) {
     document.removeEventListener('mousemove', onMouseMove);
     mapImage.removeEventListener('mouseup', stopDrag);
   }
-
 };
+
 
 mapImage.ondragstart = function () {
   return false;
@@ -67,21 +59,20 @@ mapImage.ondragstart = function () {
 
 let num = 0;
 
+console.log(window);
+
 zoomInButton.addEventListener('click', () => {
+  let changesWidthImage = window.getComputedStyle(mapImage, null).width.split('px').shift();
   if (num < 4) {
     num++
     scaleX *= 1.2;
     scaleY *= 1.1;
+    // pet.style.left = `${moveXPoint - ((changesWidthImage / 2) / (15 / num))}px`;
+
+    console.log(pet.style.left);
   }
 
-  // if (num <= 1) {
-  //   pet.style.left = '270px';
-  //   pet.style.top = '490px';
-  // }
-  // if (num === 2) {
-  //   pet.style.left = '70px';
-  //   pet.style.top = '490px';
-  // }
+
   if (mapImage.width <= wrapper.offsetWidth * 2) {
     if (mapImage.style.position !== "absolute") {
       mapImage.style.position = "absolute";
@@ -89,6 +80,7 @@ zoomInButton.addEventListener('click', () => {
     const prevWidth = mapImage.width;
     const prevHeight = mapImage.height;
     mapImage.style.width = `${mapImage.width * 1.2}px`;
+    wrapper.style.width = `${wrapper.width * 1.2}px`
     mapImage.style.height = "auto";
     const nextWidth = mapImage.width;
     const nextHeight = mapImage.height;
@@ -104,15 +96,8 @@ zoomOutButton.addEventListener('click', () => {
     num--
     scaleX /= 1.2;
     scaleY /= 1.1;
+
   }
-  // if (num <= 2) {
-  //   pet.style.left = '250px';
-  //   pet.style.top = '480px'
-  // }
-  // if (num === 2) {
-  //   pet.style.left = '70px';
-  //   pet.style.top = '490px';
-  // }
   if (mapImage.width >= wrapper.offsetWidth || mapImage.height >= wrapper.offsetHeight) {
     const prevWidth = mapImage.width;
     const prevHeight = mapImage.height;

@@ -160,6 +160,20 @@ $black: #0d444d;
     opacity: 1;
   }
 }
+@keyframes fadeForUserName {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 h1 {
   display: none;
 }
@@ -666,8 +680,8 @@ h1 {
         margin-top: 30px;
         background-size: cover;
       }
-      @media (max-width: 1170px) {
-        max-width: 45vw;
+      @media (max-width: 1200px) {
+        max-width: 43vw;
       }
       @media (max-width: 730px) {
         max-width: 40vw;
@@ -1891,9 +1905,17 @@ h1 {
             color: #b3b3b3;
             margin: 0 0 20px 45px;
             padding-top: 30px;
+            @media (max-width: 1050px) {
+              font-size: 16px;
+              padding-top: 20px;
+            }
             @media (max-width: 880px) {
               font-size: 12px;
               padding-top: 20px;
+            }
+            @media (max-width: 500px) {
+              font-size: 10px;
+              line-height: 15px;
             }
             @media (max-width: 350px) {
               padding-top: 10px;
@@ -1907,24 +1929,22 @@ h1 {
             font-style: italic;
             color: #2d2d2d;
             margin: 0 45px;
+            @media (max-width: 1050px) {
+              font-size: 16px;
+              line-height: 25px;
+            }
             @media (max-width: 880px) {
-              font-size: 14px;
+              font-size: 12px;
               margin: 0 20px;
+              line-height: 20px;
+            }
+            @media (max-width: 500px) {
+              font-size: 11px;
+              line-height: 15px;
             }
           }
           @media (max-width: 1050px) {
             height: 200px;
-          }
-          @media (max-width: 880px) {
-            height: 140px;
-          }
-          @media (max-width: 569px) {
-            width: 70vw;
-          }
-          @media (max-width: 360px) {
-            width: 300px;
-            height: 120px;
-            font-size: 14px;
           }
         }
         img {
@@ -1934,6 +1954,7 @@ h1 {
           @media (max-width: 720px) {
             margin-left: 35px;
             width: 40px;
+            height: 40px;
           }
           @media (max-width: 360px) {
             margin-left: 20px;
@@ -1952,15 +1973,7 @@ h1 {
             display: none;
           }
         }
-
-        @media (max-width: 1165px) {
-          width: 325px;
-        }
-        @media (max-width: 1050px) {
-          width: 270px;
-        }
         @media (max-width: 880px) {
-          width: 255px;
           margin-bottom: 20px;
         }
         @media (max-width: 500px) {
@@ -1980,21 +1993,8 @@ h1 {
       @media (max-width: 640px) {
         margin-bottom: 10px;
       }
-      @media (max-width: 569px) {
-        margin-left: 50%;
-        transform: translateX(-50%);
-      }
-      @media (max-width: 569px) {
-        margin-left: 40%;
-        transform: translateX(-50%);
-      }
       @media (max-width: 500px) {
         margin-top: 20px;
-      }
-      @media (max-width: 360px) {
-        margin-top: 32px;
-        margin-left: 0px;
-        transform: translateX(0%);
       }
     }
     @media (max-width: 640px) {
@@ -2003,21 +2003,6 @@ h1 {
     @media (max-width: 400px) {
       padding: 0 10px;
     }
-  }
-  @media (max-width: 640px) {
-    margin-top: -200px;
-  }
-  @media (max-width: 500px) {
-    margin-top: -10px;
-    height: 820px;
-    position: relative;
-  }
-  @media (max-width: 400px) {
-    margin-top: -10px;
-    height: 730px;
-  }
-  @media (max-width: 360px) {
-    height: 750px;
   }
 }
 .look__animals__container {
@@ -2210,6 +2195,7 @@ h1 {
     }
   }
   @media (max-width: 1300px) {
+    margin-top: 120px;
     margin-bottom: 60px;
   }
   @media (max-width: 780px) {
@@ -2218,6 +2204,7 @@ h1 {
   @media (max-width: 640px) {
     padding: 0 20px;
     margin-bottom: 40px;
+    margin-top: 0px;
   }
   @media (max-width: 400px) {
     padding: 0 10px;
@@ -2440,14 +2427,31 @@ h1 {
 }
 .user__name {
   @include RobotoMono500;
+  position: absolute;
   display: none;
   font-size: 18px;
   line-height: 19px;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  color: $blue-white;
-  width: 120px;
-  margin: auto;
-  margin-right: 30px;
+  color: $black;
+  width: 200px;
+  height: 100px;
+  border-radius: 10px;
+  background-color: #f3f5f7;
+  right: 30px;
+  top: 110px;
+  z-index: 5;
+  padding: 15px;
+  animation-name: fadeForUserName;
+  animation-duration: 3s;
+  &::after {
+    position: absolute;
+    content: "";
+    border: 20px solid transparent;
+    border-bottom: 30px solid #f3f5f7;
+    right: 20px;
+    top: -40px;
+    transform: rotate(20deg);
+  }
 }
 .btn__logout {
   display: none;

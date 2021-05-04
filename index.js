@@ -1,5 +1,4 @@
 /*-------------- pop up -------------*/
-
 const loginPopUp = document.querySelector(".login-logout");
 const loginBtn = document.querySelector(".btn__login");
 const logoutBtn = document.querySelector(".btn__logout");
@@ -53,6 +52,9 @@ function LogInPopPage() {
 }
 function changeLogBlock() {
   userName.style.display = 'block'
+  userName.addEventListener('animationend', function () {
+    userName.style.display = 'none'
+  })
   loginPopUp.style.display = "none";
   loginBtn.style.display = "none"
   accIco.style.display = 'block';
@@ -66,7 +68,6 @@ sendBtn.onclick = (e) => {
   e.preventDefault();
   nameInp.value !== '' ? userName.innerHTML = nameInp.value : userName.innerHTML = emailInp.value.split('@').shift();
   changeLogBlock()
-  console.log(nameInp.value);
 };
 loginPopUp.onclick = (e) => {
   if (e.target === loginPopUp) {
@@ -107,15 +108,23 @@ let n = 0;
 accIco.onclick = () => {
   if (n <= 2 || n >= 0) {
     logoutBtn.style.display = "block";
+    userName.style.display = 'block'
+    userName.style.marginRight = '100px'
+    userName.addEventListener('animationend', function () {
+      userName.style.display = 'block'
+    })
+
   }
   if (n === 1) {
     logoutBtn.style.display = "none";
+    userName.style.display = 'none'
     n = -1
   }
   n++
 }
 
 logoutBtn.onclick = () => {
+  userName.style.marginRight = '0px'
   userName.style.display = 'none'
   loginBtn.style.display = "block"
   accIco.style.display = 'none';
@@ -213,7 +222,6 @@ function makeTimer() {
     showSlides(commentIndex);
   }, timer);
 }
-
 
 showSlides(commentIndex);
 makeTimer();

@@ -54,6 +54,24 @@ $black: #0d444d;
     border-radius: 52% 52% 67% 40% / 45% 47% 60% 62%;
   }
 }
+@keyframes left {
+  from {
+    left: 0;
+  }
+  to {
+    left: -100%;
+  }
+}
+
+@keyframes right {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 0;
+  }
+}
+
 a {
   color: #2d2d2d;
   &:hover {

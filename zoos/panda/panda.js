@@ -30,8 +30,8 @@ pets[petNumber].onclick = () => {
     }
     bottomArrow.style.transform = 'rotate(0deg)'
     pets[petNumber].style.borderBottom = 'none'
-    n = 0
   }
+
   if (n === 0) {
     for (let i = 0; i < pets.length; i++) {
       pets[i].style.display = 'block'
@@ -42,20 +42,14 @@ pets[petNumber].onclick = () => {
   if (n >= 1) {
     n--
   }
-  console.log(n);
+  else {
+    n++
+  }
 }
 
 if (window.innerWidth <= 500) {
   hidePets()
 }
-window.addEventListener('resize', (event) => {
-  if (event.target.innerWidth <= 500) {
-    hidePets()
-  }
-  else (
-    showPets()
-  )
-})
 
 /*-------------------------video slider---------------------*/
 const videos = document.querySelectorAll('.video-skin');
@@ -91,6 +85,9 @@ const showVideos = () => {
 
 rightArrow.onclick = () => {
   if (leftVideo < videos.length - 1) {
+    videos.forEach(el => el.addEventListener('animationend', () => {
+
+    }))
     rightVideo++;
     leftVideo++;
   }
@@ -144,7 +141,6 @@ videos.forEach((el, i) => el.onclick = () => {
   srcArray = pandaVideo.src
   pandaVideo.src = el.childNodes[1].src
   el.childNodes[1].src = srcArray;
-  console.log(videosRefs[el.childNodes[1].src]);
 })
 
 
@@ -178,4 +174,21 @@ like.onclick = () => {
     }
   }
 }
-
+window.addEventListener('resize', (event) => {
+  if (event.target.innerWidth <= 500) {
+    hidePets()
+  }
+  else (
+    showPets()
+  )
+  if (window.innerWidth < 1005) {
+    rightVideo = 0;
+    leftVideo = 1;
+    showVideos()
+  }
+  else {
+    rightVideo = 0;
+    leftVideo = 2;
+    showVideos()
+  }
+})

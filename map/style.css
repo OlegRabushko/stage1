@@ -517,12 +517,11 @@
 }
 
 .map .map__container {
-  max-width: 1510px;
-  padding: 0 15px;
-  width: 100%;
+  max-width: 1480px;
   margin: auto;
   position: relative;
   overflow: hidden;
+  width: 100%;
   height: 1000px;
 }
 
@@ -539,7 +538,7 @@
 }
 
 .map .map__container .map__animal-point:nth-child(1) {
-  z-index: 1000;
+  z-index: 900;
   left: 250px;
   top: 480px;
 }
@@ -1173,7 +1172,7 @@
   bottom: 25px;
   right: 100px;
   width: 80px;
-  z-index: 5;
+  z-index: 1000;
 }
 
 .map .map__container .map__btns .map__btn {
