@@ -37,7 +37,7 @@ zoomInButton.onclick = () => {
   if (stopMoveCount < 4) {
     stopMoveCount++
   }
-  mapContainer.style.transform = `scale(${zoomCount > 5 ? zoomCount : zoomCount *= zoomCoefficient})`;
+  zoomCount > 5 ? false : mapContainer.style.transform = `scale(${zoomCount *= zoomCoefficient})`;
   pets.forEach((el, i) => el.style.transform = `scale(${zoomPetCount[i] < 0.2 ? zoomPetCount[i] : zoomPetCount[i] /= zoomCoefficient})`);
 }
 zoomOutButton.onclick = () => {
