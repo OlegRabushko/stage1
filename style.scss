@@ -189,6 +189,7 @@ h1 {
   background-color: $bg;
   border-bottom: 5px solid #1e697063;
   .header__block {
+    position: relative;
     @include blocksSize;
     display: flex;
     height: 110px;
@@ -311,7 +312,7 @@ h1 {
       width: 100%;
       .search__block {
         display: flex;
-        width: 270px;
+        width: 16vw;
         height: 40px;
         background-color: transparent;
         border-radius: 20px;
@@ -323,7 +324,7 @@ h1 {
           background-color: #f3f7f9;
         }
         .search__input {
-          width: 240px;
+          width: 15vw;
           height: 40px;
           border: none;
           outline: none;
@@ -347,15 +348,12 @@ h1 {
       }
       .account__btn {
         display: none;
+        margin-left: 10px;
         &:hover {
           cursor: pointer;
           border-radius: 50%;
           transform: scale(0.9);
           box-shadow: 0px 0px 15px 1px rgb(112, 220, 235);
-        }
-        @media (max-width: 1300px) {
-          display: block;
-          margin-left: 10px;
         }
       }
       button {
@@ -373,7 +371,7 @@ h1 {
           border: 1px solid $blue-white;
           border-radius: 40px;
         }
-        @media (max-width: 1300px) {
+        @media (max-width: 1100px) {
           display: none;
         }
       }
@@ -679,6 +677,9 @@ h1 {
         max-height: 37vw;
         margin-top: 30px;
         background-size: cover;
+      }
+      @media (max-width: 1400px) {
+        max-width: 44vw;
       }
       @media (max-width: 1200px) {
         max-width: 43vw;
@@ -2302,7 +2303,7 @@ h1 {
   z-index: 5;
   .login-logout__container {
     text-align: center;
-    margin-top: 200px;
+    margin-top: 50px;
     margin-left: 50%;
     transform: translateX(-50%);
     width: 570px;
@@ -2429,6 +2430,7 @@ h1 {
   @include RobotoMono500;
   position: absolute;
   display: none;
+  text-align: center;
   font-size: 18px;
   line-height: 19px;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -2437,9 +2439,9 @@ h1 {
   height: 100px;
   border-radius: 10px;
   background-color: #f3f5f7;
-  right: 30px;
   top: 110px;
   z-index: 5;
+  right: 30px;
   padding: 15px;
   animation-name: fadeForUserName;
   animation-duration: 3s;

@@ -127,6 +127,7 @@ h1 {
 }
 
 .header__container .header__block {
+  position: relative;
   max-width: 1540px;
   padding: 0 30px;
   width: 100%;
@@ -324,7 +325,7 @@ h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 270px;
+  width: 16vw;
   height: 40px;
   background-color: transparent;
   border-radius: 20px;
@@ -341,7 +342,7 @@ h1 {
 }
 
 .header__container .header__block .log__container .search__block .search__input {
-  width: 240px;
+  width: 15vw;
   height: 40px;
   border: none;
   outline: none;
@@ -369,6 +370,7 @@ h1 {
 
 .header__container .header__block .log__container .account__btn {
   display: none;
+  margin-left: 10px;
 }
 
 .header__container .header__block .log__container .account__btn:hover {
@@ -378,13 +380,6 @@ h1 {
           transform: scale(0.9);
   -webkit-box-shadow: 0px 0px 15px 1px #70dceb;
           box-shadow: 0px 0px 15px 1px #70dceb;
-}
-
-@media (max-width: 1300px) {
-  .header__container .header__block .log__container .account__btn {
-    display: block;
-    margin-left: 10px;
-  }
 }
 
 .header__container .header__block .log__container button {
@@ -408,7 +403,7 @@ h1 {
   border-radius: 40px;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1100px) {
   .header__container .header__block .log__container button {
     display: none;
   }
@@ -919,6 +914,12 @@ h1 {
     max-height: 37vw;
     margin-top: 30px;
     background-size: cover;
+  }
+}
+
+@media (max-width: 1400px) {
+  .watch__your__animal__container .watch__your__animal__block .main__panda {
+    max-width: 44vw;
   }
 }
 
@@ -4115,7 +4116,7 @@ h1 {
 
 .login-logout .login-logout__container {
   text-align: center;
-  margin-top: 200px;
+  margin-top: 50px;
   margin-left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -4342,6 +4343,7 @@ h1 {
   font-weight: 500;
   position: absolute;
   display: none;
+  text-align: center;
   font-size: 18px;
   line-height: 19px;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -4350,9 +4352,9 @@ h1 {
   height: 100px;
   border-radius: 10px;
   background-color: #f3f5f7;
-  right: 30px;
   top: 110px;
   z-index: 5;
+  right: 30px;
   padding: 15px;
   -webkit-animation-name: fadeForUserName;
           animation-name: fadeForUserName;

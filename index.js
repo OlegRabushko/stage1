@@ -1,6 +1,7 @@
 /*-------------- pop up -------------*/
 const loginPopUp = document.querySelector(".login-logout");
 const loginBtn = document.querySelector(".btn__login");
+const signUpBtn = document.querySelector(".btn__sign-up");
 const logoutBtn = document.querySelector(".btn__logout");
 const userName = document.querySelector(".user__name");
 const sendBtn = document.querySelector(".login-logout__btn");
@@ -57,11 +58,21 @@ function changeLogBlock() {
   })
   loginPopUp.style.display = "none";
   loginBtn.style.display = "none"
+  signUpBtn.style.display = "none"
   accIco.style.display = 'block';
 }
 
 loginBtn.onclick = () => {
   loginPopUp.style.display = "block";
+};
+signUpBtn.onclick = () => {
+  loginAccBtn.style.borderBottom = "3px solid #2a8086";
+  createAccBtn.style.borderBottom = "3px solid #c5e1e5";
+  loginPopUp.style.display = "block";
+  divsNoneForLogIn.forEach(el => el.style.display = "none")
+  skinBtn.style.display = 'block';
+  // createAccPage();
+  LogInPopPage();
 };
 
 sendBtn.onclick = (e) => {
@@ -85,8 +96,8 @@ loginAccBtn.onclick = () => {
   loginAccBtn.style.borderBottom = "3px solid #2a8086";
   createAccBtn.style.borderBottom = "3px solid #c5e1e5";
   divsNoneForLogIn.forEach(el => el.style.display = "none")
-  skinBtn.style.display = 'block'
-  LogInPopPage();
+  skinBtn.style.display = 'block';
+  createAccPage()
 };
 
 skinBtn.onclick = () => {
@@ -104,9 +115,9 @@ facebookBtn.onclick = () => {
   userName.innerHTML = 'Logged in with Facebook';
   changeLogBlock()
 }
-let n = 0;
+let countForShowLoginBar = 0;
 accIco.onclick = () => {
-  if (n <= 2 || n >= 0) {
+  if (countForShowLoginBar <= 2 || countForShowLoginBar >= 0) {
     logoutBtn.style.display = "block";
     userName.style.display = 'block'
     userName.style.marginRight = '100px'
@@ -115,21 +126,22 @@ accIco.onclick = () => {
     })
 
   }
-  if (n === 1) {
+  if (countForShowLoginBar === 1) {
     logoutBtn.style.display = "none";
     userName.style.display = 'none'
-    n = -1
+    countForShowLoginBar = -1
   }
-  n++
+  countForShowLoginBar++
 }
 
 logoutBtn.onclick = () => {
   userName.style.marginRight = '0px'
   userName.style.display = 'none'
   loginBtn.style.display = "block"
+  signUpBtn.style.display = "block"
   accIco.style.display = 'none';
   logoutBtn.style.display = "none";
-  n = 0;
+  countForShowLoginBar = 0;
 }
 
 createAccPage()
