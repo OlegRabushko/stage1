@@ -2439,9 +2439,9 @@ h1 {
   height: 100px;
   border-radius: 10px;
   background-color: #f3f5f7;
-  top: 110px;
+  top: 10px;
   z-index: 5;
-  right: 30px;
+  right: 110px;
   padding: 15px;
   animation-name: fadeForUserName;
   animation-duration: 3s;
@@ -2450,20 +2450,21 @@ h1 {
     content: "";
     border: 20px solid transparent;
     border-bottom: 30px solid #f3f5f7;
-    right: 20px;
-    top: -40px;
-    transform: rotate(20deg);
+    right: -30px;
+    top: 30px;
+    transform: rotate(90deg);
   }
 }
 .btn__logout {
+  position: absolute;
   display: none;
-  right: 30px;
+  right: 10px;
   bottom: -20px;
   width: 100px;
   height: 10px;
   border-radius: 10px;
   font-size: 15px;
   box-shadow: 0px 0px 7px rgb(223, 223, 223);
-  background-color: $bg !important;
+  background-color: #0f6570 !important;
   transform: scale(0.7);
 }

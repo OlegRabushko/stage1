@@ -62,16 +62,19 @@ function changeLogBlock() {
   accIco.style.display = 'block';
 }
 
-loginBtn.onclick = () => {
-  loginPopUp.style.display = "block";
-};
 signUpBtn.onclick = () => {
+  loginAccBtn.style.borderBottom = "3px solid #c5e1e5";
+  createAccBtn.style.borderBottom = "3px solid #2a8086";
+  loginPopUp.style.display = "block";
+  divsNoneForLogIn.forEach((el, i) => i < 2 || i === 3 ? el.style.display = "inline" : el.style.display = "block")
+  createAccPage();
+};
+loginBtn.onclick = () => {
   loginAccBtn.style.borderBottom = "3px solid #2a8086";
   createAccBtn.style.borderBottom = "3px solid #c5e1e5";
   loginPopUp.style.display = "block";
   divsNoneForLogIn.forEach(el => el.style.display = "none")
   skinBtn.style.display = 'block';
-  // createAccPage();
   LogInPopPage();
 };
 
@@ -97,7 +100,7 @@ loginAccBtn.onclick = () => {
   createAccBtn.style.borderBottom = "3px solid #c5e1e5";
   divsNoneForLogIn.forEach(el => el.style.display = "none")
   skinBtn.style.display = 'block';
-  createAccPage()
+  LogInPopPage();
 };
 
 skinBtn.onclick = () => {
@@ -120,9 +123,10 @@ accIco.onclick = () => {
   if (countForShowLoginBar <= 2 || countForShowLoginBar >= 0) {
     logoutBtn.style.display = "block";
     userName.style.display = 'block'
-    userName.style.marginRight = '100px'
+    userName.style.right = '100px'
     userName.addEventListener('animationend', function () {
       userName.style.display = 'block'
+      userName.style.right = '110px'
     })
 
   }
