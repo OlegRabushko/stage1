@@ -688,7 +688,7 @@
 
 @media (max-width: 1300px) {
   .map .map__container .map__animal-point:nth-child(2) {
-    top: 50vh;
+    top: 37vh;
     left: 67vw;
   }
 }
@@ -769,7 +769,7 @@
 
 @media (max-width: 1300px) {
   .map .map__container .map__animal-point:nth-child(3) {
-    top: 72vh;
+    top: 54vh;
     left: 54vw;
   }
 }
@@ -865,7 +865,7 @@
 
 @media (max-width: 1300px) {
   .map .map__container .map__animal-point:nth-child(4) {
-    top: 69vh;
+    top: 50vh;
     left: 48vw;
   }
 }
@@ -1051,7 +1051,7 @@
 
 @media (max-width: 1300px) {
   .map .map__container .map__animal-point:nth-child(6) {
-    top: 35vh;
+    top: 27vh;
     left: 15vw;
   }
 }
