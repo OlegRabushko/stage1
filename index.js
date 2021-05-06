@@ -67,7 +67,7 @@ signUpBtn.onclick = () => {
   loginAccBtn.style.borderBottom = "3px solid #c5e1e5";
   createAccBtn.style.borderBottom = "3px solid #2a8086";
   loginPopUp.style.display = "block";
-  divsNoneForLogIn.forEach((el, i) => i < 2 || i === 3 ? el.style.display = "inline" : el.style.display = "block")
+  divsNoneForLogIn.forEach((el, i) => el.style.display = "block")
   createAccPage();
 };
 loginBtn.onclick = () => {
@@ -92,7 +92,7 @@ loginPopUp.onclick = (e) => {
 createAccBtn.onclick = () => {
   loginAccBtn.style.borderBottom = "3px solid #c5e1e5";
   createAccBtn.style.borderBottom = "3px solid #2a8086";
-  divsNoneForLogIn.forEach((el, i) => i < 2 || i === 3 ? el.style.display = "inline" : el.style.display = "block")
+  divsNoneForLogIn.forEach((el, i) => el.style.display = "block")
   skinBtn.style.display = 'block'
   createAccPage();
 };
